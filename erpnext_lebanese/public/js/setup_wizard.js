@@ -1,22 +1,22 @@
 frappe.provide("erpnext.setup");
 
-// frappe.pages["setup-wizard"].on_page_load = function (wrapper) {
-// 	if (frappe.sys_defaults.company) {
-// 		frappe.set_route("desk");
-// 		return;
-// 	}
-// };
+frappe.pages["setup-wizard"].on_page_load = function (wrapper) {
+	if (frappe.sys_defaults.company) {
+		frappe.set_route("desk");
+		return;
+	}
+};
 
-// frappe.setup.on("before_load", function () {
-// 	if (
-// 		frappe.boot.setup_wizard_completed_apps?.length &&
-// 		frappe.boot.setup_wizard_completed_apps.includes("erpnext")
-// 	) {
-// 		return;
-// 	}
+frappe.setup.on("before_load", function () {
+	if (
+		frappe.boot.setup_wizard_completed_apps?.length &&
+		frappe.boot.setup_wizard_completed_apps.includes("erpnext")
+	) {
+		return;
+	}
 
-// 	erpnext.setup.slides_settings.map(frappe.setup.add_slide);
-// });
+	erpnext.setup.slides_settings.map(frappe.setup.add_slide);
+});
 
 erpnext.setup.slides_settings = [
 	{
@@ -73,9 +73,18 @@ erpnext.setup.slides_settings = [
 
 		onload: function (slide) {
 			this.bind_events(slide);
+			// Set default country to Lebanon
+			if (!frappe.wizard.values.country) {
+				frappe.wizard.values.country = "Lebanon";
+			}
 		},
 
 		before_show: function () {
+			// Ensure country is set to Lebanon
+			if (!frappe.wizard.values.country) {
+				frappe.wizard.values.country = "Lebanon";
+			}
+			// Load charts first, then set dates
 			this.load_chart_of_accounts(this);
 			this.set_fy_dates(this);
 		},
@@ -136,12 +145,27 @@ erpnext.setup.slides_settings = [
 		},
 
 		load_chart_of_accounts: function (slide) {
+			// Always use Lebanon for chart loading
+			let country = "Lebanon";
+			// Ensure country is set in wizard values
+			frappe.wizard.values.country = country;
+			
 			frappe.call({
 				method: "erpnext_lebanese.overrides.chart_of_accounts_override.get_lebanese_charts",
-				args: { country: "Lebanon" },
+				args: { country: country },
 				callback: function (r) {
-					if (r.message) {
+					if (r.message && r.message.length > 0) {
 						slide.get_input("chart_of_accounts").empty().add_options(r.message);
+						// Auto-select Lebanese Standard Chart of Accounts if available
+						let lebaneseChart = r.message.find(function(chart) {
+							return chart.includes("Lebanese Standard Chart of Accounts");
+						});
+						if (lebaneseChart) {
+							slide.get_field("chart_of_accounts").set_value(lebaneseChart);
+							frappe.log_error(`Auto-selected chart: ${lebaneseChart}`, "Info");
+						}
+					} else {
+						frappe.log_error("No charts returned from get_lebanese_charts", "Warning");
 					}
 				},
 			});

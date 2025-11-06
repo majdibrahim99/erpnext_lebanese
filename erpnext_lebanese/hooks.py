@@ -85,7 +85,7 @@ app_license = "mit"
 # ------------
 
 # before_install = "erpnext_lebanese.install.before_install"
-# after_install = "erpnext_lebanese.install.after_install"
+after_install = "erpnext_lebanese.install.after_install"
 
 # Uninstallation
 # ------------
@@ -131,21 +131,14 @@ app_license = "mit"
 # ---------------
 # Override standard doctype classes
 
-# override_doctype_class = {
-# 	"ToDo": "custom_app.overrides.CustomToDo"
-# }
+override_doctype_class = {
+	"Company": "erpnext_lebanese.overrides.company_override.LebaneseCompany"
+}
 
 # Document Events
 # ---------------
 # Hook on document methods and events
-
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+# Note: We use override_doctype_class instead of doc_events for Company
 
 # Scheduled Tasks
 # ---------------
@@ -176,9 +169,10 @@ app_license = "mit"
 # Overriding Methods
 # ------------------------------
 #
-# override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "erpnext_lebanese.event.get_events"
-# }
+override_whitelisted_methods = {
+	"erpnext.setup.setup_wizard.setup_wizard.get_setup_stages": "erpnext_lebanese.overrides.setup_wizard_override.get_setup_stages",
+	"erpnext.setup.setup_wizard.setup_wizard.setup_complete": "erpnext_lebanese.overrides.setup_wizard_override.setup_complete",
+}
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,

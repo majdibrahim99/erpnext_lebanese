@@ -1,0 +1,45 @@
+{
+    "Lebanon": {
+        "chart_of_accounts": {
+            "*": {
+                "sales_tax_templates": [
+                    {
+                        "title": "Lebanon VAT 11%",
+                        "is_default": 1,
+                        "taxes": [
+                            {
+                                "account_head": {
+                                    "account_name": "VAT",
+                                    "tax_rate": 11
+                                },
+                                "charge_type": "On Net Total",
+                                "account_head": "VAT",
+                                "rate": 11,
+                                "description": "VAT @ 11%"
+                            }
+                        ]
+                    }
+                ],
+                "purchase_tax_templates": [
+                    {
+                        "title": "Lebanon VAT 11%",
+                        "is_default": 1,
+                        "taxes": [
+                            {
+                                "account_head": {
+                                    "account_name": "VAT",
+                                    "tax_rate": 11
+                                },
+                                "charge_type": "On Net Total",
+                                "account_head": "VAT", 
+                                "rate": 11,
+                                "description": "VAT @ 11%",
+                                "add_deduct_tax": "Add"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

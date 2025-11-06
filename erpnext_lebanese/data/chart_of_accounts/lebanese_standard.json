@@ -1,6 +1,7 @@
 {
     "country_code": "lb", 
     "name": "Lebanese Standard Chart of Accounts",
+    "disabled": "No",
     "tree": {
         "1000 - COMPTES DE CAPITAUX PERMANENTS": {
             "root_type": "Equity",

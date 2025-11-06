@@ -5,83 +5,75 @@ from frappe.utils import cstr
 
 @frappe.whitelist()
 def get_lebanese_charts(country=None, with_standard=False):
-    """Return only the Lebanese Standard chart"""
-    path = frappe.get_app_path("erpnext_lebanese", "data", "chart_of_accounts", "lebanese_standard.json")
-    if os.path.exists(path):
-        with open(path) as f:
-            content = json.load(f)
-            if content and content.get("disabled", "No") == "No":
-                return [content["name"]]
-    return []
+    """
+    Return Lebanese charts - now uses ERPNext's standard method
+    The chart JSON is copied to ERPNext's unverified folder during installation
+    """
+    # Enable unverified charts so ERPNext can find our chart
+    frappe.local.flags.allow_unverified_charts = True
+    
+    # Use ERPNext's standard method to get charts for Lebanon
+    from erpnext.accounts.doctype.account.chart_of_accounts.chart_of_accounts import get_charts_for_country
+    
+    country = country or "Lebanon"
+    charts = get_charts_for_country(country, with_standard=with_standard)
+    
+    # Filter to only return Lebanese charts, or return all if none found
+    lebanese_charts = [c for c in charts if "Lebanese" in c or "lebanese" in c.lower()]
+    
+    return lebanese_charts if lebanese_charts else charts
 
 @frappe.whitelist()
 def get_lebanese_coa(doctype, parent, is_root=None, chart=None):
-    """Get Lebanese Chart of Accounts from custom JSON file"""
+    """
+    Get Lebanese Chart of Accounts - uses ERPNext's standard method
+    The chart JSON is in ERPNext's unverified folder
+    """
+    # Enable unverified charts so ERPNext can find our chart
+    frappe.local.flags.allow_unverified_charts = True
     
-    # Add chart to flags to retrieve when called from expand all function
+    # Use ERPNext's standard method
+    from erpnext.accounts.doctype.account.chart_of_accounts.chart_of_accounts import get_chart
+    
     chart = chart if chart else frappe.flags.chart
     frappe.flags.chart = chart
     
     parent = None if parent == _("All Accounts") else parent
     
-    # Build tree from your custom JSON file
-    accounts = build_tree_from_lebanese_json()
+    # Get chart tree from ERPNext's standard method
+    chart_tree = get_chart(chart)
     
-    # Filter out to show data for the selected node only
-    accounts = [d for d in accounts if d["parent_account"] == parent]
+    if not chart_tree:
+        return []
     
-    return accounts
-
-def build_tree_from_lebanese_json():
-    """Build account tree from Lebanese standard JSON file"""
+    # Build account list from tree
     accounts = []
     
-    # Get the chart data from your custom path
-    chart_data = get_lebanese_chart()
-    
-    if not chart_data:
-        return accounts
-    
-    def _import_accounts(children, parent):
-        """Recursively build account tree"""
+    def _build_accounts(children, parent_account):
         for account_name, child in children.items():
-            # Skip metadata fields
-            if account_name in [
+            if account_name not in [
                 "account_name", "account_number", "account_type", 
                 "root_type", "is_group", "tax_rate", "account_currency"
             ]:
-                continue
-            
-            account = {}
-            account["parent_account"] = parent
-            account["expandable"] = identify_is_group(child)
-            account["value"] = (
-                (cstr(child.get("account_number")).strip() + " - " + account_name)
-                if child.get("account_number")
-                else account_name
-            )
-            accounts.append(account)
-            _import_accounts(child, account["value"])
+                account = {}
+                account["parent_account"] = parent_account
+                account["expandable"] = identify_is_group(child)
+                account["value"] = (
+                    (cstr(child.get("account_number")).strip() + " - " + account_name)
+                    if child.get("account_number")
+                    else account_name
+                )
+                accounts.append(account)
+                _build_accounts(child, account["value"])
     
-    _import_accounts(chart_data, None)
-    return accounts
+    _build_accounts(chart_tree, parent)
+    
+    # Filter to show data for the selected node only
+    filtered_accounts = [d for d in accounts if d["parent_account"] == parent]
+    
+    return filtered_accounts
 
-def get_lebanese_chart():
-    """Load Lebanese chart from custom path"""
-    try:
-        # CORRECTED PATH: Use your app path instead of site path
-        json_path = frappe.get_app_path("erpnext_lebanese", "data", "chart_of_accounts", "lebanese_standard.json")
-        
-        if os.path.exists(json_path):
-            with open(json_path, 'r') as f:
-                chart_data = json.load(f)
-                return chart_data.get("tree")  # Assuming same structure as ERPNext
-        else:
-            frappe.msgprint(f"Lebanese COA file not found at: {json_path}")
-            return None
-    except Exception as e:
-        frappe.msgprint(f"Error loading Lebanese COA: {str(e)}")
-        return None
+# Removed - now using ERPNext's standard get_chart method
 
 def identify_is_group(child):
     """Identify if account is a group account"""
@@ -91,3 +83,5 @@ def identify_is_group(child):
             "root_type", "is_group", "tax_rate", "account_currency"
         ] for key in child.keys()) else 0)
     return False
+
+# Removed - ERPNext handles chart installation from JSON file in unverified folder
