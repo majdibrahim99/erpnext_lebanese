@@ -55,15 +55,15 @@ def get_lebanese_coa(doctype, parent, is_root=None, chart=None):
                 "account_name", "account_number", "account_type", 
                 "root_type", "is_group", "tax_rate", "account_currency"
             ]:
-                account = {}
+            account = {}
                 account["parent_account"] = parent_account
-                account["expandable"] = identify_is_group(child)
-                account["value"] = (
-                    (cstr(child.get("account_number")).strip() + " - " + account_name)
-                    if child.get("account_number")
-                    else account_name
-                )
-                accounts.append(account)
+            account["expandable"] = identify_is_group(child)
+            account["value"] = (
+                (cstr(child.get("account_number")).strip() + " - " + account_name)
+                if child.get("account_number")
+                else account_name
+            )
+            accounts.append(account)
                 _build_accounts(child, account["value"])
     
     _build_accounts(chart_tree, parent)

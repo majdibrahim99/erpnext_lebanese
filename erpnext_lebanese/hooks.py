@@ -241,3 +241,8 @@ override_whitelisted_methods = {
 
 
 setup_wizard_requires = "assets/erpnext_lebanese/js/setup_wizard.js"
+
+doctype_tree_js = {
+	"Account": "public/js/account_tree.js"
+}
+
