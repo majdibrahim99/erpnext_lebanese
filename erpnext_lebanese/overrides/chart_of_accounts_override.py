@@ -49,22 +49,40 @@ def get_lebanese_coa(doctype, parent, is_root=None, chart=None):
     # Build account list from tree
     accounts = []
     
+    metadata_keys = {
+        "account_name",
+        "account_number",
+        "account_type",
+        "root_type",
+        "is_group",
+        "tax_rate",
+        "account_currency",
+        "arabic_name",
+        "french_name",
+    }
+
     def _build_accounts(children, parent_account):
         for account_name, child in children.items():
-            if account_name not in [
-                "account_name", "account_number", "account_type", 
-                "root_type", "is_group", "tax_rate", "account_currency"
-            ]:
-            account = {}
-                account["parent_account"] = parent_account
-            account["expandable"] = identify_is_group(child)
-            account["value"] = (
-                (cstr(child.get("account_number")).strip() + " - " + account_name)
-                if child.get("account_number")
+            if account_name in metadata_keys:
+                continue
+            if not isinstance(child, dict):
+                continue
+
+            account_value = (
+                f"{cstr(child.get('account_number')).strip()} - {account_name}"
+                if cstr(child.get("account_number")).strip()
                 else account_name
             )
+
+            account = {
+                "parent_account": parent_account,
+                "expandable": identify_is_group(child),
+                "value": account_value,
+            }
             accounts.append(account)
-                _build_accounts(child, account["value"])
+
+            if account["expandable"]:
+                _build_accounts(child, account_value)
     
     _build_accounts(chart_tree, parent)
     
