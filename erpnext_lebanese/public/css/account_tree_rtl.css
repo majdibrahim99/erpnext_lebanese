@@ -1,0 +1,59 @@
+/* RTL styles for Account tree view */
+.tree[dir="rtl"],
+.tree.rtl-tree {
+	direction: rtl;
+	text-align: right;
+}
+
+.tree[dir="rtl"] .tree-node,
+.tree.rtl-tree .tree-node {
+	text-align: right;
+}
+
+.tree[dir="rtl"] .tree-link,
+.tree.rtl-tree .tree-link {
+	text-align: right;
+	direction: rtl;
+}
+
+.tree[dir="rtl"] .tree-label,
+.tree.rtl-tree .tree-label {
+	text-align: right;
+	direction: rtl;
+}
+
+.tree[dir="rtl"] .tree-children,
+.tree.rtl-tree .tree-children {
+	padding-right: 20px;
+	padding-left: 0;
+	text-align: right;
+}
+
+.tree[dir="rtl"] .tree-link .node-parent,
+.tree[dir="rtl"] .tree-link .node-leaf,
+.tree.rtl-tree .tree-link .node-parent,
+.tree.rtl-tree .tree-link .node-leaf {
+	margin-left: 8px;
+	margin-right: 0;
+}
+
+.tree[dir="rtl"] .tree-node-toolbar,
+.tree.rtl-tree .tree-node-toolbar {
+	margin-right: 15px;
+	margin-left: 0;
+}
+
+.tree[dir="rtl"] .balance-area.pull-left,
+.tree.rtl-tree .balance-area.pull-left {
+	float: left !important;
+	text-align: left;
+}
+
+@media (max-width: 767px) {
+	.tree[dir="rtl"] .tree-children,
+	.tree.rtl-tree .tree-children {
+		padding-right: 10px;
+		padding-left: 0;
+	}
+}
+
