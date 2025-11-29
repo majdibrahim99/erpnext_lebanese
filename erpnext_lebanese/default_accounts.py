@@ -238,11 +238,13 @@ def _create_account(company: str, blueprint: dict) -> str | None:
 def build_company_structural_defaults(company: str) -> dict[str, str]:
 	defaults: dict[str, str] = {}
 
+	# Ensure cost center exists first, then get it
+	_ensure_cost_center_tree(company)
 	primary_cost_center = _get_primary_cost_center(company)
 	if primary_cost_center:
-		defaults.setdefault("cost_center", primary_cost_center)
-		defaults.setdefault("round_off_cost_center", primary_cost_center)
-		defaults.setdefault("depreciation_cost_center", primary_cost_center)
+		defaults["cost_center"] = primary_cost_center
+		defaults["round_off_cost_center"] = primary_cost_center
+		defaults["depreciation_cost_center"] = primary_cost_center
 
 	for fieldname, blueprint in WAREHOUSE_BLUEPRINTS.items():
 		wh_name = _ensure_warehouse(company, **blueprint)
@@ -253,6 +255,28 @@ def build_company_structural_defaults(company: str) -> dict[str, str]:
 
 
 def _get_primary_cost_center(company: str) -> str | None:
+	# First try to find "Main - FE" specifically
+	cost_center = frappe.db.get_value(
+		"Cost Center",
+		{"company": company, "name": "Main - FE", "is_group": 0},
+		"name",
+	)
+	if cost_center:
+		return cost_center
+	
+	# Try with company abbreviation pattern "Main - {abbr}"
+	abbr = frappe.db.get_value("Company", company, "abbr")
+	if abbr:
+		cost_center_name = f"Main - {abbr}"
+		cost_center = frappe.db.get_value(
+			"Cost Center",
+			{"company": company, "name": cost_center_name, "is_group": 0},
+			"name",
+		)
+		if cost_center:
+			return cost_center
+	
+	# Fallback to any "Main" cost center
 	cost_center = frappe.db.get_value(
 		"Cost Center",
 		{"company": company, "cost_center_name": "Main", "is_group": 0},
@@ -264,6 +288,7 @@ def _get_primary_cost_center(company: str) -> str | None:
 	if cost_center:
 		return cost_center
 
+	# Ensure cost center tree exists - this will create "Main - {abbr}"
 	return _ensure_cost_center_tree(company)
 
 
@@ -299,12 +324,11 @@ def _ensure_cost_center_tree(company: str) -> str | None:
 		)
 		main_doc.flags.ignore_permissions = True
 		main_doc.insert()
+		# Return the name that was just created
+		return main_doc.name
 
-	return frappe.db.get_value(
-		"Cost Center",
-		{"company": company, "cost_center_name": "Main", "is_group": 0},
-		"name",
-	)
+	# Return existing cost center name
+	return main_name
 
 
 def _ensure_warehouse(company: str, warehouse_name: str, warehouse_type: str | None = None) -> str | None:

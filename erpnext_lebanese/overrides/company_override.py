@@ -71,6 +71,29 @@ class LebaneseCompany(Company):
 		try:
 			# Call parent on_update - this will call create_default_accounts() which calls get_chart()
 			super().on_update()
+			
+			# After accounts are created, ensure cost center is set for Lebanese companies
+			if is_lebanese and self.name:
+				try:
+					from erpnext_lebanese.default_accounts import _ensure_cost_center_tree, _get_primary_cost_center
+					
+					# Ensure cost center exists
+					cost_center = _ensure_cost_center_tree(self.name)
+					if not cost_center:
+						cost_center = _get_primary_cost_center(self.name)
+					
+					# Set cost center if we have one and it's not already set
+					if cost_center:
+						current_cost_center = frappe.db.get_value("Company", self.name, "cost_center")
+						if not current_cost_center:
+							# Use db_set for consistency
+							self.db_set("cost_center", cost_center)
+							self.db_set("round_off_cost_center", cost_center)
+							self.db_set("depreciation_cost_center", cost_center)
+							frappe.db.commit()
+				except Exception as e:
+					# Don't fail company update if cost center setting fails
+					frappe.log_error(f"Error setting cost center in on_update: {str(e)}", "Lebanese Company Setup")
 		finally:
 			# Clear the flags
 			if is_lebanese:
@@ -138,24 +161,59 @@ class LebaneseCompany(Company):
 			frappe.local.flags.ignore_root_company_validation = True
 			lebanese_create_charts(self.name, self.chart_of_accounts, self.existing_company)
 			
-			# Set default accounts
-			self.db_set(
-				"default_receivable_account",
-				frappe.db.get_value(
-					"Account", {"company": self.name, "account_type": "Receivable", "is_group": 0}
-				),
+			# Set default accounts - use specific Lebanese account numbers
+			receivable_account = frappe.db.get_value(
+				"Account", {"company": self.name, "account_number": "4111"}, "name"
 			)
-			self.db_set(
-				"default_payable_account",
-				frappe.db.get_value("Account", {"company": self.name, "account_type": "Payable", "is_group": 0}),
+			if receivable_account:
+				self.db_set("default_receivable_account", receivable_account)
+			else:
+				# Fallback to any receivable account
+				self.db_set(
+					"default_receivable_account",
+					frappe.db.get_value(
+						"Account", {"company": self.name, "account_type": "Receivable", "is_group": 0}
+					),
+				)
+			
+			payable_account = frappe.db.get_value(
+				"Account", {"company": self.name, "account_number": "4011"}, "name"
 			)
+			if payable_account:
+				self.db_set("default_payable_account", payable_account)
+			else:
+				# Fallback to any payable account
+				self.db_set(
+					"default_payable_account",
+					frappe.db.get_value("Account", {"company": self.name, "account_type": "Payable", "is_group": 0}),
+				)
 			
 			# Set additional default accounts for Lebanese companies
 			try:
+				# First ensure cost center tree exists and get the cost center name
+				from erpnext_lebanese.default_accounts import _ensure_cost_center_tree, _get_primary_cost_center
+				
+				# Create cost center tree first - this returns the main cost center name
+				cost_center = _ensure_cost_center_tree(self.name)
+				
+				# If creation didn't return it, try to get it
+				if not cost_center:
+					cost_center = _get_primary_cost_center(self.name)
+				
+				# Now set all defaults (this will include cost center if found)
 				set_lebanese_default_accounts(self.name)
-				frappe.db.commit()
+				
+				# Explicitly set cost center using db_set (same method as accounts above)
+				# This ensures it's set on the company document
+				if cost_center:
+					self.db_set("cost_center", cost_center)
+					self.db_set("round_off_cost_center", cost_center)
+					self.db_set("depreciation_cost_center", cost_center)
+					frappe.db.commit()
+				
 			except Exception as e:
 				# Don't fail - accounts are already created
+				frappe.log_error(f"Error setting Lebanese defaults: {str(e)}", "Lebanese Company Setup")
 				pass
 		else:
 			# For non-Lebanese companies, use default behavior
