@@ -756,8 +756,10 @@
           "french_name": "Fournisseurs d’Exploitation",
           "Suppliers - Invoices Payable": {
             "account_number": "4011",
+            "root_type": "Liability",
+            "account_type": "Payable",
             "arabic_name": "موردو الاستثمار - فواتير برسم الدفع",
-            "french_name": "Factures Fournisseurs d’Exploitation"
+            "french_name": "Factures Fournisseurs d'Exploitation"
           },
           "Suppliers - Notes Payable": {
             "account_number": "4015",
@@ -832,6 +834,8 @@
           "french_name": "Factures Clients",
           "Customers Receivables - Invoices": {
             "account_number": "4111",
+            "root_type": "Asset",
+            "account_type": "Receivable",
             "arabic_name": "زبائن مدينون- فواتير برسم التحصيل",
             "french_name": "Clients Débiteurs"
           },
