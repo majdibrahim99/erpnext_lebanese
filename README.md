@@ -1,9 +1,3 @@
-Here’s a **cleaned, more precise, and professional version** of your README, with improved wording, reduced redundancy, and a **clear sponsorship acknowledgment for Elissa** added in an appropriate place.
-
-You can replace your current README with the following:
-
----
-
 # ERPNext Lebanese
 
 A custom ERPNext application tailored for the **Lebanese accounting system**, providing a standardized Chart of Accounts and a fully localized, multilingual experience.
