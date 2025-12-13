@@ -92,8 +92,9 @@ class LebaneseCompany(Company):
 							self.db_set("depreciation_cost_center", cost_center)
 							frappe.db.commit()
 					
-					# Create Sales Taxes and Charges Template as backup
+					# Create Sales and Purchase Taxes and Charges Templates
 					create_lebanese_sales_tax_template(self.name, cost_center)
+					create_lebanese_purchase_tax_template(self.name, cost_center)
 				except Exception as e:
 					# Don't fail company update if cost center setting fails
 					frappe.log_error(f"Error setting cost center in on_update: {str(e)}", "Lebanese Company Setup")
@@ -216,8 +217,9 @@ class LebaneseCompany(Company):
 				# Commit all account and cost center changes first
 				frappe.db.commit()
 				
-				# Create default Sales Taxes and Charges Template (after accounts are committed)
+				# Create default Sales and Purchase Taxes and Charges Templates (after accounts are committed)
 				create_lebanese_sales_tax_template(self.name, cost_center)
+				create_lebanese_purchase_tax_template(self.name, cost_center)
 				
 			except Exception as e:
 				# Don't fail - accounts are already created
@@ -267,22 +269,23 @@ def create_lebanese_sales_tax_template(company, cost_center=None):
 	if existing_template:
 		return
 	
-	# Get account 6410 for this company - retry a few times in case accounts are still being created
-	account_6410 = None
+	# Get account 4427 (Value Added Tax - Collected on Revenues) for this company
+	# Retry a few times in case accounts are still being created
+	account_4427 = None
 	for attempt in range(3):
 		frappe.db.commit()  # Commit any pending transactions first
-		account_6410 = frappe.db.get_value(
+		account_4427 = frappe.db.get_value(
 			"Account",
-			{"company": company, "account_number": "6410"},
+			{"company": company, "account_number": "4427"},
 			"name"
 		)
-		if account_6410:
+		if account_4427:
 			break
 	
-	if not account_6410:
+	if not account_4427:
 		# Account not found, log and skip template creation
 		frappe.log_error(
-			f"Account 6410 not found for company {company} after retries. Cannot create tax template.",
+			f"Account 4427 (Value Added Tax - Collected on Revenues) not found for company {company} after retries. Cannot create tax template.",
 			"Lebanese Tax Template Creation"
 		)
 		return
@@ -311,8 +314,8 @@ def create_lebanese_sales_tax_template(company, cost_center=None):
 			"taxes": [
 				{
 					"charge_type": "On Net Total",
-					"account_head": account_6410,
-					"description": "Income Tax On Salaries & Wages",
+					"account_head": account_4427,
+					"description": "VAT @ 11%",
 					"included_in_print_rate": 0,
 					"included_in_paid_amount": 0,
 					"cost_center": cost_center,
@@ -331,5 +334,98 @@ def create_lebanese_sales_tax_template(company, cost_center=None):
 	except Exception as e:
 		import traceback
 		error_msg = f"Error creating Sales Taxes and Charges Template for company {company}: {str(e)}\n{traceback.format_exc()}"
+		frappe.log_error(error_msg, "Lebanese Tax Template Creation")
+
+
+def create_lebanese_purchase_tax_template(company, cost_center=None):
+	"""Create default Purchase Taxes and Charges Template for Lebanese companies."""
+	if not company:
+		return
+	
+	# Get company abbreviation for dynamic account/cost center names
+	company_abbr = frappe.db.get_value("Company", company, "abbr")
+	if not company_abbr:
+		frappe.log_error(
+			f"Company abbreviation not found for {company}. Cannot create tax template.",
+			"Lebanese Tax Template Creation"
+		)
+		return
+	
+	# Check if template already exists for this company
+	existing_template = frappe.db.get_value(
+		"Purchase Taxes and Charges Template",
+		{"title": "VAT 11%", "company": company},
+		"name"
+	)
+	
+	if existing_template:
+		return
+	
+	# Get account 4426.6 (Value Added Tax - On Purchases & Charges) for this company
+	# Retry a few times in case accounts are still being created
+	account_4426_6 = None
+	for attempt in range(3):
+		frappe.db.commit()  # Commit any pending transactions first
+		account_4426_6 = frappe.db.get_value(
+			"Account",
+			{"company": company, "account_number": "4426.6"},
+			"name"
+		)
+		if account_4426_6:
+			break
+	
+	if not account_4426_6:
+		# Account not found, log and skip template creation
+		frappe.log_error(
+			f"Account 4426.6 (Value Added Tax - On Purchases & Charges) not found for company {company} after retries. Cannot create tax template.",
+			"Lebanese Tax Template Creation"
+		)
+		return
+	
+	# Get cost center if not provided
+	if not cost_center:
+		from erpnext_lebanese.default_accounts import _get_primary_cost_center
+		cost_center = _get_primary_cost_center(company)
+	
+	if not cost_center:
+		frappe.log_error(
+			f"Cost center not found for company {company}. Cannot create tax template.",
+			"Lebanese Tax Template Creation"
+		)
+		return
+	
+	# Get company currency
+	company_currency = frappe.db.get_value("Company", company, "default_currency") or "LBP"
+	
+	try:
+		# Create Purchase Taxes and Charges Template
+		template = frappe.get_doc({
+			"doctype": "Purchase Taxes and Charges Template",
+			"title": "VAT 11%",
+			"company": company,
+			"taxes": [
+				{
+					"charge_type": "On Net Total",
+					"account_head": account_4426_6,
+					"description": "VAT @ 11%",
+					"add_deduct_tax": "Add",
+					"included_in_print_rate": 0,
+					"included_in_paid_amount": 0,
+					"cost_center": cost_center,
+					"rate": 11.0,
+					"account_currency": company_currency
+				}
+			]
+		})
+		
+		template.flags.ignore_permissions = True
+		template.flags.ignore_mandatory = True
+		template.insert()
+		
+		frappe.db.commit()
+		
+	except Exception as e:
+		import traceback
+		error_msg = f"Error creating Purchase Taxes and Charges Template for company {company}: {str(e)}\n{traceback.format_exc()}"
 		frappe.log_error(error_msg, "Lebanese Tax Template Creation")
 
