@@ -1399,7 +1399,7 @@
          "french_name": "Autres Comptes Débiteurs Divers – Hors Exploitation"
        }
      },
-     "PRE-PAYMENTS & ACCRUALS": {
+     "Pre-Payments & Accruals": {
        "account_number": "47",
        "arabic_name": "حسابات التسوية",
        "french_name": "Comptes de Régularisation",
@@ -1605,7 +1605,7 @@
        "account_number": "53",
        "arabic_name": "الصندوق",
        "french_name": "Caisse",
-       "CASH ON HAND": {
+       "Cash on Hand": {
          "account_number": "531",
          "arabic_name": "صندوق النقدية",
          "french_name": "Caisse"
@@ -2827,21 +2827,21 @@
          "arabic_name": "إعانات للتوظيفات محوّلة إلى نتيجة الدورة",
          "french_name": "Subventions d’Investissements Virées au Résultat de l’Exercice"
        },
-       "OTHER NON-OPERATING REVENUES": {
+       "Other Non-Operating Revenues": {
          "account_number": "788",
          "arabic_name": "إيرادات أخرى خارج الإستثمار",
          "french_name": "Autres Produits Hors Exploitation",
-         "Extraordinary Operating Revenues": {
+         "Extra-Ordinary Operating Revenues": {
            "account_number": "7881",
            "arabic_name": "إيرادات إستثنائية على عمليات جارية",
            "french_name": "Produits Exceptionnels sur Opérations de Gestion"
          },
-         "Other Income on ExtraOrdinary Transactions": {
+         "Other Income on Extra-Ordinary Transactions": {
            "account_number": "7888",
            "arabic_name": "إيرادات أخرى على عمليات رأسمالية إستثنائية",
            "french_name": "Autres Produits sur Opérations Exceptionnelles en Capital"
          },
-         "Sundry ExtraOrdinary Charges Transferred": {
+         "Sundry Extra-Ordinary Charges Transferred": {
            "account_number": "7889",
            "arabic_name": "أعباء إستثنائية محوّلة إلى حسابات أخرى",
            "french_name": "Transferts de Charges Exceptionnelles"
