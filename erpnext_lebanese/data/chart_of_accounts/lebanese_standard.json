@@ -249,7 +249,8 @@
              "account_number": "1552.3",
              "arabic_name": "مؤونات لتعويضات طوارئ العمل",
              "french_name": "Provisions pour Accidents de Travail"
-           },
+           }
+         },
          "Provision for Taxes (Other than Income Tax)": {
            "account_number": "1553",
            "arabic_name": "مؤونات للضرائب (غير ضريبة الأرباح)",
@@ -318,7 +319,8 @@
            "account_number": "1815",
            "arabic_name": "حركات الدورة المالية",
            "french_name": "Mouvements de la Période"
-         },
+         }
+       },
        "Intercompany Charges": {
          "account_number": "186",
          "arabic_name": "أعباء ناتجة عن معاملات متبادلة بين المؤسسات والفروع",
@@ -406,18 +408,18 @@
            "Other Intangible Fixed Assets": {
              "account_number": "219",
              "arabic_name": "أصول ثابتة غير مادية أخرى",
-             "french_name": "Autres Immobilisations Incorporelles"
-           },
+             "french_name": "Autres Immobilisations Incorporelles",
              "Miscellaneous Intangible Fixed Assets": {
               "account_number": "2191",
               "arabic_name": "أصول ثابتة غير مادية متنوعة",
               "french_name": "Autres Immobilisations Diverses"
-           },
+             },
              "Advance Payments on Account of Intangible Fixed Assets": {
                "account_number": "2198",
                "arabic_name": "سلف ودفعات على حساب اقتناء أصول ثابتة غير مادية",
                "french_name": "Avances et Acomptes sur Immobilisations Incorporelles"
              }
+            }
          },
          "Tangible Fixed Assets": {
            "account_number": "22",
@@ -884,8 +886,9 @@
            "account_number": "311",
            "arabic_name": "مخزون مواد أولية",
            "french_name": "Stocks de matières premières"
+          }
          },
-         "Stock of Goods, Works, & Services In Progress": {
+         "Stock of Goods, Works & Services In Progress": {
            "account_number": "33",
            "arabic_name": "مخزون سلع وأشغال وخدمات قيد الإنجاز",
            "french_name": "Stocks – en Cours de Production"
@@ -1142,13 +1145,12 @@
        "Taxes Due on Operations": {
          "account_number": "441",
          "arabic_name": "ضرائب متوجبة على الإستثمار",
-         "french_name": "Impôts dus Sur l’exploitation"
-       },
-       "Taxes & Duties (Except Income Tax)": {
-         "account_number": "4411",
-         "arabic_name": "ضرائب ورسوم متوجبة (ما عدا ضريبة الأرباح)",
-         "french_name": "Impôts et Taxes – (Impôt sur le Revenu Exclus)"
-       },
+         "french_name": "Impôts dus Sur l’exploitation",
+           "Taxes & Duties (Except Income Tax)": {
+             "account_number": "4411",
+             "arabic_name": "ضرائب ورسوم متوجبة (ما عدا ضريبة الأرباح)",
+             "french_name": "Impôts et Taxes – (Impôt sur le Revenu Exclus)"
+          },
        "Taxes & Duties - Notes Payable": {
          "account_number": "4415",
          "arabic_name": "ضرائب ورسوم متوجبة - أوراق دفع",
@@ -1158,6 +1160,7 @@
          "account_number": "4418",
          "arabic_name": "ضرائب ورسوم متوجبة - أعباء يجب لحظها",
          "french_name": "Impôts et Taxes – Charges à Constater"
+        }
        },
        "Value Added Tax Accounts": {
          "account_number": "442",
@@ -1172,17 +1175,18 @@
           "account_number": "4425.1",
           "arabic_name": "الضريبة المتوجب دفعها على القيمة المضافة",
           "french_name": "TVA à payer"
-         },   
-       "Value Added Tax - On Fixed Assets Purchases": {
-         "account_number": "4426.2",
-         "arabic_name": "ضريبة القيمة المضافة - مدفوعة عن أصول ثابتة",
-         "french_name": "TVA - Sur Achats d'Immobilisations"
-       },
-       "Value Added Tax - On Purchases & Charges": {
-         "account_number": "4426.6",
-         "arabic_name": "ضريبة القيمة المضافة - مدفوعة عن مشتريات او مصاريف",
-         "french_name": "TVA - Sur Achats & Charges"
-       },
+          }
+         },
+         "Value Added Tax - On Fixed Assets Purchases": {
+           "account_number": "4426.2",
+           "arabic_name": "ضريبة القيمة المضافة - مدفوعة عن أصول ثابتة",
+           "french_name": "TVA - Sur Achats d'Immobilisations"
+         },
+         "Value Added Tax - On Purchases & Charges": {
+           "account_number": "4426.6",
+           "arabic_name": "ضريبة القيمة المضافة - مدفوعة عن مشتريات او مصاريف",
+           "french_name": "TVA - Sur Achats & Charges"
+        },
        "Value Added Tax - Collected on Revenues": {
          "account_number": "4427",
          "arabic_name": "ضريبة القيمة المضافة - محصّلة من الإيرادات",
@@ -1865,7 +1869,7 @@
            "arabic_name": "مصاريف توثيق وإشتراكات",
            "french_name": "Documentation"
          },
-         "RESEARCH & STUDIES FEES": {
+         "Research & Studies Fees": {
            "account_number": "6267",
            "arabic_name": "مصاريف دراسات وبحوث",
            "french_name": "Études et Recherches"
@@ -1955,7 +1959,7 @@
            "arabic_name": "تأمينات صحية وخلافها للمستخدمين",
            "french_name": "Allocations Médicales"
          },
-         "Scholarships to the Personnel & their Child.": {
+         "Scholarships to the Personnel & their Child": {
            "account_number": "6319.5",
            "arabic_name": "منح تعليم للمستخدمين وأولادهم",
            "french_name": "Allocations Scolaires"
@@ -2856,7 +2860,7 @@
            "arabic_name": "استردادات من مؤونات هبوط أسعار",
            "french_name": "Reprises sur Provisions pour Dépréciations – Hors Exploitation"
          },
-         "Reversal of Prov. for Non-Operating Risks & Charges Prices Fall": {
+         "Reversal of Provision for Non-Operating Risks & Charges Prices Fall": {
            "account_number": "7895",
            "arabic_name": "استردادات من مؤونات مخاطر وأعباء خارج الإستثمار",
            "french_name": "Reprises sur Provisions pour Risques et Charges – Hors Exploitation"
@@ -2877,4 +2881,4 @@
      }
    }
  }
-}
+
