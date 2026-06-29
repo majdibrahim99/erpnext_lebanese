@@ -249,128 +249,128 @@
               "account_number": "1552.3",
               "arabic_name": "مؤونات لتعويضات طوارئ العمل",
               "french_name": "Provisions pour Accidents de Travail"
+            },
+            "Provision for Taxes (Other than Income Tax)": {
+              "account_number": "1553",
+              "arabic_name": "مؤونات للضرائب (غير ضريبة الأرباح)",
+              "french_name": "Provisions pour Impôts (non sur le Revenu)"
+            }
+          }
+        },
+        "Long & Medium Term Debts": {
+          "account_number": "16",
+          "arabic_name": "ديون مالية طويلة ومتوسطة الأجل",
+          "french_name": "Dettes Financières à Long et Moyen Terme",
+          "Loans Against Debentures": {
+            "account_number": "161",
+            "arabic_name": "قروض لأجل لقاء سندات دين",
+            "french_name": "Emprunts Obligataires"
+          },
+          "Long Term Loans From Financial Institutions": {
+            "account_number": "162",
+            "arabic_name": "قروض لأجل من المصارف ومؤسّسات التسليف",
+            "french_name": "Emprunts auprès d’Établissements de Crédit"
+          },
+          "Sundry Long & Medium Term Loans": {
+            "account_number": "168",
+            "arabic_name": "قروض وديون متفرّقة لأجل",
+            "french_name": "Emprunts et Dettes Divers",
+            "Notes Payable Resulting from the Purchase of the Business": {
+              "account_number": "1681",
+              "arabic_name": "أوراق دفع ناجمة عن شراء المؤسسة التجارية",
+              "french_name": "Effets à Payer Résultant de l’Acquisition du Fonds de Commerce"
+            },
+            "Deposits and Guarantees Received": {
+              "account_number": "1682",
+              "arabic_name": "ودائع و كفالات",
+              "french_name": "Dépôts et Garanties Reçus"
+            },
+            "Advances from the Government": {
+              "account_number": "1683",
+              "arabic_name": "سلفات الدولة",
+              "french_name": "Avances de l’État"
+            },
+            "Capitalized Life Annuities": {
+              "account_number": "1684",
+              "arabic_name": "دخل لمدى الحياة متراكم",
+              "french_name": "Rentes Viagères Capitalisées"
+            },
+            "Other Medium and Long Term Debts": {
+              "account_number": "1689",
+              "arabic_name": "ديون أخرى طويلة ومتوسطة الأجل",
+              "french_name": "Autres Dettes à Moyen et Long Terme"
             }
           },
-          "Provision for Taxes (Other than Income Tax)": {
-            "account_number": "1553",
-            "arabic_name": "مؤونات للضرائب (غير ضريبة الأرباح)",
-            "french_name": "Provisions pour Impôts (non sur le Revenu)"
+          "Accounts with Affiliated Companies and Branches": {
+            "account_number": "18",
+            "arabic_name": "حسابات إرتباط المؤسّسات والفروع",
+            "french_name": "Comptes de Liaison des Établissements, Succursales",
+            "Branches and Joint Ventures Accounts": {
+              "account_number": "181",
+              "arabic_name": "حسابات ارتباط المؤسسات والفروع وشركات المشاركة (حساب مستقل لكل مؤسسة)",
+              "french_name": "Comptes de Liaison des Succursales et Entreprises en Participation",
+              "Balance Brought Forward": {
+                "account_number": "1811",
+                "arabic_name": "رصيد مدور",
+                "french_name": "Solde Reporté"
+              },
+              "Movements of the Period": {
+                "account_number": "1815",
+                "arabic_name": "حركات الدورة المالية",
+                "french_name": "Mouvements de la Période"
+              },
+              "Intercompany Charges": {
+                "account_number": "186",
+                "arabic_name": "أعباء ناتجة عن معاملات متبادلة بين المؤسسات والفروع",
+                "french_name": "Charges Inter-entreprises"
+              },
+              "Intercompany Income": {
+                "account_number": "187",
+                "arabic_name": "إيرادات ناتجة عن معاملات متبادلة بين المؤسسات والفروع",
+                "french_name": "Produits Inter-entreprises"
+              }
+            }
+          },
+          "Accounts for the Aggregation of Charges and Income": {
+            "account_number": "19",
+            "arabic_name": "حسابات تجميع الأعباء والإيرادات",
+            "french_name": "Comptes de Regroupement des Charges et des Produits",
+            "Determination of Gross Trading Margin": {
+              "account_number": "191",
+              "arabic_name": "تحديد الهامش التجاري القائم",
+              "french_name": "Détermination de la Marge Commerciale Brute"
+            },
+            "Determination of Value Added": {
+              "account_number": "192",
+              "arabic_name": "تحديد القيمة المضافة",
+              "french_name": "Détermination de la Valeur Ajoutée"
+            },
+            "Determination of Gross Operating Surplus": {
+              "account_number": "193",
+              "arabic_name": "تحديد الفائض غير الصافي للاستثمار",
+              "french_name": "Détermination de l’Excédent Brut d’Exploitation"
+            },
+            "Determination of Operating Result Before Financial Income and Expenses": {
+              "account_number": "194",
+              "arabic_name": "تحديد نتيجة الاستثمار قبل الإيرادات والمصاريف المالية",
+              "french_name": "Détermination du Résultat d’Exploitation Avant Produits et Charges Financiers"
+            },
+            "Determination of Current Result Before Taxation": {
+              "account_number": "195",
+              "arabic_name": "تحديد النتيجة الجارية قبل الضريبة",
+              "french_name": "Détermination du Résultat Courant Avant Impôt"
+            },
+            "Determination of Non-Operating Result": {
+              "account_number": "196",
+              "arabic_name": "تحديد النتيجة خارج الاستثمار",
+              "french_name": "Détermination du Résultat Hors Exploitation"
+            },
+            "Determination of the Period Result": {
+              "account_number": "197",
+              "arabic_name": "تحديد نتيجة الدورة المالية",
+              "french_name": "Détermination du Résultat de l’Exercice"
+            }
           }
-        }
-      },
-      "Long & Medium Term Debts": {
-        "account_number": "16",
-        "arabic_name": "ديون مالية طويلة ومتوسطة الأجل",
-        "french_name": "Dettes Financières à Long et Moyen Terme",
-        "Loans Against Debentures": {
-          "account_number": "161",
-          "arabic_name": "قروض لأجل لقاء سندات دين",
-          "french_name": "Emprunts Obligataires"
-        },
-        "Long Term Loans From Financial Institutions": {
-          "account_number": "162",
-          "arabic_name": "قروض لأجل من المصارف ومؤسّسات التسليف",
-          "french_name": "Emprunts auprès d’Établissements de Crédit"
-        },
-        "Sundry Long & Medium Term Loans": {
-          "account_number": "168",
-          "arabic_name": "قروض وديون متفرّقة لأجل",
-          "french_name": "Emprunts et Dettes Divers",
-          "Notes Payable Resulting from the Purchase of the Business": {
-            "account_number": "1681",
-            "arabic_name": "أوراق دفع ناجمة عن شراء المؤسسة التجارية",
-            "french_name": "Effets à Payer Résultant de l’Acquisition du Fonds de Commerce"
-          },
-          "Deposits and Guarantees Received": {
-            "account_number": "1682",
-            "arabic_name": "ودائع و كفالات",
-            "french_name": "Dépôts et Garanties Reçus"
-          },
-          "Advances from the Government": {
-            "account_number": "1683",
-            "arabic_name": "سلفات الدولة",
-            "french_name": "Avances de l’État"
-          },
-          "Capitalized Life Annuities": {
-            "account_number": "1684",
-            "arabic_name": "دخل لمدى الحياة متراكم",
-            "french_name": "Rentes Viagères Capitalisées"
-          },
-          "Other Medium and Long Term Debts": {
-            "account_number": "1689",
-            "arabic_name": "ديون أخرى طويلة ومتوسطة الأجل",
-            "french_name": "Autres Dettes à Moyen et Long Terme"
-          }
-        }
-      },
-      "Accounts with Affiliated Companies and Branches": {
-        "account_number": "18",
-        "arabic_name": "حسابات إرتباط المؤسّسات والفروع",
-        "french_name": "Comptes de Liaison des Établissements, Succursales",
-        "Branches and Joint Ventures Accounts": {
-          "account_number": "181",
-          "arabic_name": "حسابات ارتباط المؤسسات والفروع وشركات المشاركة (حساب مستقل لكل مؤسسة)",
-          "french_name": "Comptes de Liaison des Succursales et Entreprises en Participation",
-          "Balance Brought Forward": {
-            "account_number": "1811",
-            "arabic_name": "رصيد مدور",
-            "french_name": "Solde Reporté"
-          },
-          "Movements of the Period": {
-            "account_number": "1815",
-            "arabic_name": "حركات الدورة المالية",
-            "french_name": "Mouvements de la Période"
-          }
-        },
-        "Intercompany Charges": {
-          "account_number": "186",
-          "arabic_name": "أعباء ناتجة عن معاملات متبادلة بين المؤسسات والفروع",
-          "french_name": "Charges Inter-entreprises"
-        },
-        "Intercompany Income": {
-          "account_number": "187",
-          "arabic_name": "إيرادات ناتجة عن معاملات متبادلة بين المؤسسات والفروع",
-          "french_name": "Produits Inter-entreprises"
-        }
-      },
-      "Accounts for the Aggregation of Charges and Income": {
-        "account_number": "19",
-        "arabic_name": "حسابات تجميع الأعباء والإيرادات",
-        "french_name": "Comptes de Regroupement des Charges et des Produits",
-        "Determination of Gross Trading Margin": {
-          "account_number": "191",
-          "arabic_name": "تحديد الهامش التجاري القائم",
-          "french_name": "Détermination de la Marge Commerciale Brute"
-        },
-        "Determination of Value Added": {
-          "account_number": "192",
-          "arabic_name": "تحديد القيمة المضافة",
-          "french_name": "Détermination de la Valeur Ajoutée"
-        },
-        "Determination of Gross Operating Surplus": {
-          "account_number": "193",
-          "arabic_name": "تحديد الفائض غير الصافي للاستثمار",
-          "french_name": "Détermination de l’Excédent Brut d’Exploitation"
-        },
-        "Determination of Operating Result Before Financial Income and Expenses": {
-          "account_number": "194",
-          "arabic_name": "تحديد نتيجة الاستثمار قبل الإيرادات والمصاريف المالية",
-          "french_name": "Détermination du Résultat d’Exploitation Avant Produits et Charges Financiers"
-        },
-        "Determination of Current Result Before Taxation": {
-          "account_number": "195",
-          "arabic_name": "تحديد النتيجة الجارية قبل الضريبة",
-          "french_name": "Détermination du Résultat Courant Avant Impôt"
-        },
-        "Determination of Non-Operating Result": {
-          "account_number": "196",
-          "arabic_name": "تحديد النتيجة خارج الاستثمار",
-          "french_name": "Détermination du Résultat Hors Exploitation"
-        },
-        "Determination of the Period Result": {
-          "account_number": "197",
-          "arabic_name": "تحديد نتيجة الدورة المالية",
-          "french_name": "Détermination du Résultat de l’Exercice"
         }
       }
     },
@@ -406,17 +406,17 @@
         "Other Intangible Fixed Assets": {
           "account_number": "219",
           "arabic_name": "أصول ثابتة غير مادية أخرى",
-          "french_name": "Autres Immobilisations Incorporelles",
-          "Miscellaneous Intangible Fixed Assets": {
-            "account_number": "2191",
-            "arabic_name": "أصول ثابتة غير مادية متنوعة",
-            "french_name": "Autres Immobilisations Diverses"
-          },
-          "Advance Payments on Account of Intangible Fixed Assets": {
-            "account_number": "2198",
-            "arabic_name": "سلف ودفعات على حساب اقتناء أصول ثابتة غير مادية",
-            "french_name": "Avances et Acomptes sur Immobilisations Incorporelles"
-          }
+          "french_name": "Autres Immobilisations Incorporelles"
+        },
+        "Miscellaneous Intangible Fixed Assets": {
+          "account_number": "2191",
+          "arabic_name": "أصول ثابتة غير مادية متنوعة",
+          "french_name": "Autres Immobilisations Diverses"
+        },
+        "Advance Payments on Account of Intangible Fixed Assets": {
+          "account_number": "2198",
+          "arabic_name": "سلف ودفعات على حساب اقتناء أصول ثابتة غير مادية",
+          "french_name": "Avances et Acomptes sur Immobilisations Incorporelles"
         }
       },
       "Tangible Fixed Assets": {
@@ -706,7 +706,7 @@
         "Depreciation of Tangible Fixed Assets": {
           "account_number": "282",
           "arabic_name": "استهلاكات الاصول الثابتة المادية",
-          "french_name": "Amortissements des Immobilisations Corporelles",
+          "french_name": "Amortissements des Immobilisations Incorporelles",
           "Depreciation of Extractive Lands & Landscaping": {
             "account_number": "2821",
             "arabic_name": "إستهلاك الأراضي - إستثمار جوفي وإستصلاح",
@@ -927,7 +927,6 @@
       }
     },
     "Receivables & Payables": {
-      "root_type": "Asset",
       "account_number": "4",
       "arabic_name": "حسابات الذمم",
       "french_name": "Comptes de Tiers",
@@ -1140,36 +1139,36 @@
         "Taxes Due on Operations": {
           "account_number": "441",
           "arabic_name": "ضرائب متوجبة على الإستثمار",
-          "french_name": "Impôts dus Sur l’exploitation",
-          "Taxes & Duties (Except Income Tax)": {
-            "account_number": "4411",
-            "arabic_name": "ضرائب ورسوم متوجبة (ما عدا ضريبة الأرباح)",
-            "french_name": "Impôts et Taxes – (Impôt sur le Revenu Exclus)"
-          },
-          "Taxes & Duties - Notes Payable": {
-            "account_number": "4415",
-            "arabic_name": "ضرائب ورسوم متوجبة - أوراق دفع",
-            "french_name": "Impôts et Taxes – Effets à Payer"
-          },
-          "Taxes & Duties - Charges to be Accounted for": {
-            "account_number": "4418",
-            "arabic_name": "ضرائب ورسوم متوجبة - أعباء يجب لحظها",
-            "french_name": "Impôts et Taxes – Charges à Constater"
-          }
+          "french_name": "Impôts dus Sur l’exploitation"
+        },
+        "Taxes & Duties (Except Income Tax)": {
+          "account_number": "4411",
+          "arabic_name": "ضرائب ورسوم متوجبة (ما عدا ضريبة الأرباح)",
+          "french_name": "Impôts et Taxes – (Impôt sur le Revenu Exclus)"
+        },
+        "Taxes & Duties - Notes Payable": {
+          "account_number": "4415",
+          "arabic_name": "ضرائب ورسوم متوجبة - أوراق دفع",
+          "french_name": "Impôts et Taxes – Effets à Payer"
+        },
+        "Taxes & Duties - Charges to be Accounted for": {
+          "account_number": "4418",
+          "arabic_name": "ضرائب ورسوم متوجبة - أعباء يجب لحظها",
+          "french_name": "Impôts et Taxes – Charges à Constater"
         },
         "Value Added Tax Accounts": {
           "account_number": "442",
           "arabic_name": "الدولة والمؤسسات العامة - الضريبة على القيمة المضافة",
-          "french_name": "Taxe sur la Valeur Ajoutée – TVA",
-          "Value Added Tax - Debtor/Creditor Balance": {
-            "account_number": "4425",
-            "arabic_name": "ضريبة القيمة المضافة - رصيد مدين أو دائن",
-            "french_name": "TVA - Solde Débiteurs ou Créditeur",
-            "Value Added Tax - To Be Paid": {
-              "account_number": "4425.1",
-              "arabic_name": "الضريبة المتوجب دفعها على القيمة المضافة",
-              "french_name": "TVA à payer"
-            }
+          "french_name": "Taxe sur la Valeur Ajoutée – TVA"
+        },
+        "Value Added Tax - Debtor/Creditor Balance": {
+          "account_number": "4425",
+          "arabic_name": "ضريبة القيمة المضافة - رصيد مدين أو دائن",
+          "french_name": "TVA - Solde Débiteurs ou Créditeur",
+          "Value Added Tax - To Be Paid": {
+            "account_number": "4425.1",
+            "arabic_name": "الضريبة المتوجب دفعها على القيمة المضافة",
+            "french_name": "TVA à payer"
           },
           "Value Added Tax - On Fixed Assets Purchases": {
             "account_number": "4426.2",
@@ -1195,331 +1194,331 @@
             "account_number": "4429",
             "arabic_name": "ضريبة القيمة المضافة - متوجّبة الأسترداد",
             "french_name": "TVA - à Recupérer"
-          }
-        },
-        "Non-Operational Tax": {
-          "account_number": "443",
-          "arabic_name": "ضرائب متوجّبة خارج الإستثمار",
-          "french_name": "Impôts Hors Exploitation",
-          "Income Tax on Net Operating Profits": {
-            "account_number": "4431",
-            "arabic_name": "الضريبة على أرباح الإستثمار",
-            "french_name": "Impôts sur les Bénéfices"
           },
-          "Tax on Fixed Assets Disposal or Revaluation Profits": {
-            "account_number": "4432",
-            "arabic_name": "الضريبة على أرباح التحسين والتفرّغ عن أصول",
-            "french_name": "Impôts sur Cessions et Révalorisations d’Immobilisations"
-          },
-          "Tax on Holding & Off-Shore Companies": {
-            "account_number": "4435",
-            "arabic_name": "الضريبة على شركات الهولدنغ والأوف شور",
-            "french_name": "Impôts sur Sociétés Holdings et Off-Shore"
-          }
-        },
-        "Government & Public Services - Credit Account": {
-          "account_number": "445",
-          "arabic_name": "الدولة والمؤسّسات العامة - ذمم دائنة",
-          "french_name": "Autres Dettes envers l’État et les Collectivités Publiques"
-        },
-        "Government & Public Services - Debit Account": {
-          "account_number": "449",
-          "arabic_name": "الدولة والمؤسّسات العامة - ذمم مدينة",
-          "french_name": "Créances sur l’État et les Collectivités Publiques"
-        }
-      },
-      "Partners": {
-        "account_number": "45",
-        "arabic_name": "الشركاء",
-        "french_name": "Associés",
-        "Related Companies Accounts": {
-          "account_number": "451",
-          "arabic_name": "الحسابات للشركات المترابطة - شركات شقيقة",
-          "french_name": "Sociétés Apparentées",
-          "Related Companies Debtor Accounts": {
-            "account_number": "4511",
-            "arabic_name": "الحسابات المدينة للشركات المترابطة (الشقيقة)",
-            "french_name": "Sociétés Apparentées – Comptes Débiteurs",
-            "Mother Company Debtor Account": {
-              "account_number": "4511.1",
-              "arabic_name": "الحساب المدين للشركة الأم",
-              "french_name": "Société Mère – Compte Débiteur"
+          "Non-Operational Tax": {
+            "account_number": "443",
+            "arabic_name": "ضرائب متوجّبة خارج الإستثمار",
+            "french_name": "Impôts Hors Exploitation",
+            "Tax on Fixed Assets Disposal or Revaluation Profits": {
+              "account_number": "4432",
+              "arabic_name": "الضريبة على أرباح التحسين والتفرّغ عن أصول",
+              "french_name": "Impôts sur Cessions et Révalorisations d’Immobilisations"
             },
-            "Affiliated Companies Debtor Accounts": {
-              "account_number": "4511.2",
-              "arabic_name": "الحساب المدين للشركات التابعة",
-              "french_name": "Sociétés Dépendantes – Comptes Débiteurs"
+            "Tax on Holding & Off-Shore Companies": {
+              "account_number": "4435",
+              "arabic_name": "الضريبة على شركات الهولدنغ والأوف شور",
+              "french_name": "Impôts sur Sociétés Holdings et Off-Shore"
             },
-            "Associated Companies Debtor Accounts": {
-              "account_number": "4511.3",
-              "arabic_name": "الحساب المدين للشركات المشاركة",
-              "french_name": "Sociétés Associées – Comptes Débiteurs"
-            },
-            "Companies Affiliated to Different Holdings – Debit Accounts": {
-              "account_number": "4511.4",
-              "arabic_name": "الحساب المدين للشركات الداخلة في عدة مجموعات",
-              "french_name": "Sociétés Multigroupes – Comptes Débiteurs"
+            "Income Tax on Net Operating Profits (Payable)": {
+              "account_number": "4431",
+              "arabic_name": "الضريبة على أرباح الإستثمار",
+              "french_name": "Impôts sur les Bénéfices"
             }
           },
-          "Related Companies Creditor Accounts": {
-            "account_number": "4512",
-            "arabic_name": "الحسابات الدائنة للشركات المترابطة - شركات شقيقة",
-            "french_name": "Sociétés Apparentées – Comptes Créditeurs",
-            "Mother Company Creditor Account": {
-              "account_number": "4512.1",
-              "arabic_name": "الحساب الدائن للشركة الأم",
-              "french_name": "Société Mère – Compte Créditeur"
+          "Government & Public Services - Credit Account": {
+            "account_number": "445",
+            "arabic_name": "الدولة والمؤسّسات العامة - ذمم دائنة",
+            "french_name": "Autres Dettes envers l’État et les Collectivités Publiques"
+          },
+          "Government & Public Services - Debit Account": {
+            "account_number": "449",
+            "arabic_name": "الدولة والمؤسّسات العامة - ذمم مدينة",
+            "french_name": "Créances sur l’État et les Collectivités Publiques"
+          }
+        },
+        "Partners": {
+          "account_number": "45",
+          "arabic_name": "الشركاء",
+          "french_name": "Associés",
+          "Related Companies Accounts": {
+            "account_number": "451",
+            "arabic_name": "الحسابات للشركات المترابطة - شركات شقيقة",
+            "french_name": "Sociétés Apparentées",
+            "Related Companies Debtor Accounts": {
+              "account_number": "4511",
+              "arabic_name": "الحسابات المدينة للشركات المترابطة (الشقيقة)",
+              "french_name": "Sociétés Apparentées – Comptes Débiteurs",
+              "Mother Company Debtor Account": {
+                "account_number": "4511.1",
+                "arabic_name": "الحساب المدين للشركة الأم",
+                "french_name": "Société Mère – Compte Débiteur"
+              },
+              "Affiliated Companies Debtor Accounts": {
+                "account_number": "4511.2",
+                "arabic_name": "الحساب المدين للشركات التابعة",
+                "french_name": "Sociétés Dépendantes – Comptes Débiteurs"
+              },
+              "Associated Companies Debtor Accounts": {
+                "account_number": "4511.3",
+                "arabic_name": "الحساب المدين للشركات المشاركة",
+                "french_name": "Sociétés Associées – Comptes Débiteurs"
+              },
+              "Companies Affiliated to Different Holdings – Debit Accounts": {
+                "account_number": "4511.4",
+                "arabic_name": "الحساب المدين للشركات الداخلة في عدة مجموعات",
+                "french_name": "Sociétés Multigroupes – Comptes Débiteurs"
+              }
             },
-            "Affiliated Companies Creditor Accounts": {
-              "account_number": "4512.2",
-              "arabic_name": "الحساب الدائن للشركات التابعة",
-              "french_name": "Sociétés Dépendantes – Comptes Créditeurs"
+            "Related Companies Creditor Accounts": {
+              "account_number": "4512",
+              "arabic_name": "الحسابات الدائنة للشركات المترابطة - شركات شقيقة",
+              "french_name": "Sociétés Apparentées – Comptes Créditeurs",
+              "Mother Company Creditor Account": {
+                "account_number": "4512.1",
+                "arabic_name": "الحساب الدائن للشركة الأم",
+                "french_name": "Société Mère – Compte Créditeur"
+              },
+              "Affiliated Companies Creditor Accounts": {
+                "account_number": "4512.2",
+                "arabic_name": "الحساب الدائن للشركات التابعة",
+                "french_name": "Sociétés Dépendantes – Comptes Créditeurs"
+              },
+              "Associated Companies Creditor Accounts": {
+                "account_number": "4512.3",
+                "arabic_name": "الحساب الدائن للشركات المشاركة",
+                "french_name": "Sociétés Associées – Comptes Créditeurs"
+              },
+              "Companies Affiliated to Different Holdings – Credit Accounts": {
+                "account_number": "4512.4",
+                "arabic_name": "الحساب الدائن للشركات الداخلة في عدة مجموعات",
+                "french_name": "Sociétés Multigroupes – Comptes Créditeurs"
+              }
             },
-            "Associated Companies Creditor Accounts": {
-              "account_number": "4512.3",
-              "arabic_name": "الحساب الدائن للشركات المشاركة",
-              "french_name": "Sociétés Associées – Comptes Créditeurs"
+            "Partners & Other Related Companies - Debit Accounts": {
+              "account_number": "4515.1",
+              "arabic_name": "شركاء - حسابات جارية ذات أرصدة مدينة",
+              "french_name": "Associés – Comptes Courants Débiteurs"
             },
-            "Companies Affiliated to Different Holdings – Credit Accounts": {
-              "account_number": "4512.4",
-              "arabic_name": "الحساب الدائن للشركات الداخلة في عدة مجموعات",
-              "french_name": "Sociétés Multigroupes – Comptes Créditeurs"
+            "Partners & Other Related Companies - Credit Accounts": {
+              "account_number": "4515.2",
+              "arabic_name": "شركاء - حسابات جارية ذات أرصدة دائنة",
+              "french_name": "Associés – Comptes Courants Créditeurs"
+            },
+            "Joint Ventures - Debtor Balances": {
+              "account_number": "4518.1",
+              "arabic_name": "عمليات مشتركة - ذات أرصدة مدينة",
+              "french_name": "Opérations en Commun – Solde Débiteur"
+            },
+            "Joint Ventures - Creditor Balances": {
+              "account_number": "4518.2",
+              "arabic_name": "عمليات مشتركة - ذات أرصدة دائنة",
+              "french_name": "Opérations en Commun – Solde Créditeur"
             }
           },
-          "Partners & Other Related Companies - Debit Accounts": {
-            "account_number": "4515.1",
-            "arabic_name": "شركاء - حسابات جارية ذات أرصدة مدينة",
-            "french_name": "Associés – Comptes Courants Débiteurs"
+          "Dividends Payable": {
+            "account_number": "453",
+            "arabic_name": "مساهمون - انصبة ارباح برسم الدفع",
+            "french_name": "Dividendes à Payer"
           },
-          "Partners & Other Related Companies - Credit Accounts": {
-            "account_number": "4515.2",
-            "arabic_name": "شركاء - حسابات جارية ذات أرصدة دائنة",
-            "french_name": "Associés – Comptes Courants Créditeurs"
+          "Shareholders/Partners Payables On Capital": {
+            "account_number": "455",
+            "arabic_name": "مساهمون - الذمم الدائنة على رأس المال",
+            "french_name": "Actionnaires/Associés – Comptes Créditeurs",
+            "Shareholders/Partners - Contributions to the Capital": {
+              "account_number": "4551",
+              "arabic_name": "مساهمون/شركاء - حسابات المقدمات للشركة",
+              "french_name": "Actionnaires/Associés – Comptes d’Apport en Société"
+            },
+            "Shareholders/Partners - Re-imbursement of the Capital": {
+              "account_number": "4552",
+              "arabic_name": "مساهمون/شركاء - حسابات إسترداد رأس المال",
+              "french_name": "Actionnaires/Associés – Capital à Rembourser"
+            },
+            "Shareholders/Partners - Other Payables on Capital": {
+              "account_number": "4557",
+              "arabic_name": "مساهمون/شركاء - ذمم أخرى دائنة على رأس المال",
+              "french_name": "Actionnaires/Associés – Autres Dûs sur Capital"
+            }
           },
-          "Joint Ventures - Debtor Balances": {
-            "account_number": "4518.1",
-            "arabic_name": "عمليات مشتركة - ذات أرصدة مدينة",
-            "french_name": "Opérations en Commun – Solde Débiteur"
-          },
-          "Joint Ventures - Creditor Balances": {
-            "account_number": "4518.2",
-            "arabic_name": "عمليات مشتركة - ذات أرصدة دائنة",
-            "french_name": "Opérations en Commun – Solde Créditeur"
+          "Shareholders/Partners Receivables On Capital": {
+            "account_number": "459",
+            "arabic_name": "مساهمون - الذمم المدينة على رأس المال",
+            "french_name": "Créances sur Actionnaires/Associés",
+            "Shareholders - Subscribed/Un-Called Capital": {
+              "account_number": "4591",
+              "arabic_name": "مساهمون - المكتتب غير المستدعى من رأس المال",
+              "french_name": "Actionnaires – Capital Souscrit Non Appelé"
+            },
+            "Shareholders - Subscribed/Called/Unpaid Capital": {
+              "account_number": "4592",
+              "arabic_name": "مساهمون - المكتتب المستدعى وغير المدفوع من رأس المال",
+              "french_name": "Actionnaires – Capital Souscrit Appelé Non Versé"
+            },
+            "Shareholders/Partners - Other Receivables on Capital": {
+              "account_number": "4597",
+              "arabic_name": "مساهمون/شركاء - ذمم أخرى مدينة على رأس المال",
+              "french_name": "Actionnaires/Associés – Autres Créances sur Capital"
+            }
           }
         },
-        "Dividends Payable": {
-          "account_number": "453",
-          "arabic_name": "مساهمون - انصبة ارباح برسم الدفع",
-          "french_name": "Dividendes à Payer"
-        },
-        "Shareholders/Partners Payables On Capital": {
-          "account_number": "455",
-          "arabic_name": "مساهمون - الذمم الدائنة على رأس المال",
-          "french_name": "Actionnaires/Associés – Comptes Créditeurs",
-          "Shareholders/Partners - Contributions to the Capital": {
-            "account_number": "4551",
-            "arabic_name": "مساهمون/شركاء - حسابات المقدمات للشركة",
-            "french_name": "Actionnaires/Associés – Comptes d’Apport en Société"
+        "Miscellaneous Accounts Receivable & Payable": {
+          "account_number": "46",
+          "arabic_name": "ذمم مختلفة",
+          "french_name": "Autres Débiteurs et Créditeurs",
+          "Payables on Consignments": {
+            "account_number": "4611",
+            "arabic_name": "ذمم دائنة متعلّقة بالعبوات والمعدّات",
+            "french_name": "Dettes pour Emballages et Matériels Consignés"
           },
-          "Shareholders/Partners - Re-imbursement of the Capital": {
-            "account_number": "4552",
-            "arabic_name": "مساهمون/شركاء - حسابات إسترداد رأس المال",
-            "french_name": "Actionnaires/Associés – Capital à Rembourser"
+          "Other Operating Creditor Accounts": {
+            "account_number": "4619",
+            "arabic_name": "حسابات دائنة مختلفة - إستثمار",
+            "french_name": "Comptes Créditeurs Divers – Exploitation"
           },
-          "Shareholders/Partners - Other Payables on Capital": {
-            "account_number": "4557",
-            "arabic_name": "مساهمون/شركاء - ذمم أخرى دائنة على رأس المال",
-            "french_name": "Actionnaires/Associés – Autres Dûs sur Capital"
+          "Payables on Financial Fixed Assets": {
+            "account_number": "463",
+            "arabic_name": "أقساط برسم الدفع على أصول ثابتة مالية",
+            "french_name": "Versements Restant à Effectuer sur Immobilisations Financières"
+          },
+          "Sundry Non-Operating Accounts Payable": {
+            "account_number": "465",
+            "arabic_name": "دائنون مختلفون خارج الإستثمار",
+            "french_name": "Autres Créditeurs Divers – Hors Exploitation"
+          },
+          "Receivables on Consignments": {
+            "account_number": "4681",
+            "arabic_name": "ذمم مدينة متعلّقة بالعبوات والمعدّات",
+            "french_name": "Créances pour Emballages et Matériels à Rendre"
+          },
+          "Other Operating Debtor Accounts": {
+            "account_number": "4689",
+            "arabic_name": "حسابات مدينة مختلفة - إستثمار",
+            "french_name": "Autres Comptes Débiteurs Divers – Exploitation"
+          },
+          "Receivables on Disposals of Fixed Assets & Financial Deeds": {
+            "account_number": "4691",
+            "arabic_name": "ذمم مدينة على بيع اصول ثابتة وسندات توظيف",
+            "french_name": "Créances sur Cession d’Immobilisations et Valeurs Mobilières de Placement"
+          },
+          "Other Non-Operating Debtor Accounts": {
+            "account_number": "4699",
+            "arabic_name": "مدينون مختلفون - خارج الإستثمار",
+            "french_name": "Autres Comptes Débiteurs Divers – Hors Exploitation"
           }
         },
-        "Shareholders/Partners Receivables On Capital": {
-          "account_number": "459",
-          "arabic_name": "مساهمون - الذمم المدينة على رأس المال",
-          "french_name": "Créances sur Actionnaires/Associés",
-          "Shareholders - Subscribed/Un-Called Capital": {
-            "account_number": "4591",
-            "arabic_name": "مساهمون - المكتتب غير المستدعى من رأس المال",
-            "french_name": "Actionnaires – Capital Souscrit Non Appelé"
+        "PRE-PAYMENTS & ACCRUALS": {
+          "account_number": "47",
+          "arabic_name": "حسابات التسوية",
+          "french_name": "Comptes de Régularisation",
+          "Deferred Charges": {
+            "account_number": "471",
+            "arabic_name": "الأعباء الواجب توزيعها على عدة دورات",
+            "french_name": "Charges à Répartir sur Plusieurs Exercices",
+            "Pre-Operating Expenses": {
+              "account_number": "4711",
+              "arabic_name": "أعباء ما قبل الإستثمار",
+              "french_name": "Frais de Pré-Exploitation"
+            },
+            "Major Repairs to be Amortized": {
+              "account_number": "4712",
+              "arabic_name": "التصليحات الكبيرة الواجب إستهلاكها",
+              "french_name": "Grosses Réparations à Amortir"
+            },
+            "Bonds Settlement Premium": {
+              "account_number": "4713",
+              "arabic_name": "علاوات تسديد السندات",
+              "french_name": "Primes de Remboursement des Obligations"
+            },
+            "Other Deferred Charges": {
+              "account_number": "4719",
+              "arabic_name": "اعباء أخرى واجب توزيعها على عدة دورات",
+              "french_name": "Autres Charges à Répartir sur Plusieurs Exercices"
+            }
           },
-          "Shareholders - Subscribed/Called/Unpaid Capital": {
-            "account_number": "4592",
-            "arabic_name": "مساهمون - المكتتب المستدعى وغير المدفوع من رأس المال",
-            "french_name": "Actionnaires – Capital Souscrit Appelé Non Versé"
+          "Prepaid Charges": {
+            "account_number": "472",
+            "arabic_name": "اعباء محتسبة مسبقا",
+            "french_name": "Charges Constatées d’Avance"
           },
-          "Shareholders/Partners - Other Receivables on Capital": {
-            "account_number": "4597",
-            "arabic_name": "مساهمون/شركاء - ذمم أخرى مدينة على رأس المال",
-            "french_name": "Actionnaires/Associés – Autres Créances sur Capital"
-          }
-        }
-      },
-      "Miscellaneous Accounts Receivable & Payable": {
-        "account_number": "46",
-        "arabic_name": "ذمم مختلفة",
-        "french_name": "Autres Débiteurs et Créditeurs",
-        "Payables on Consignments": {
-          "account_number": "4611",
-          "arabic_name": "ذمم دائنة متعلّقة بالعبوات والمعدّات",
-          "french_name": "Dettes pour Emballages et Matériels Consignés"
-        },
-        "Other Operating Creditor Accounts": {
-          "account_number": "4619",
-          "arabic_name": "حسابات دائنة مختلفة - إستثمار",
-          "french_name": "Comptes Créditeurs Divers – Exploitation"
-        },
-        "Payables on Financial Fixed Assets": {
-          "account_number": "463",
-          "arabic_name": "أقساط برسم الدفع على أصول ثابتة مالية",
-          "french_name": "Versements Restant à Effectuer sur Immobilisations Financières"
-        },
-        "Sundry Non-Operating Accounts Payable": {
-          "account_number": "465",
-          "arabic_name": "دائنون مختلفون خارج الإستثمار",
-          "french_name": "Autres Créditeurs Divers – Hors Exploitation"
-        },
-        "Receivables on Consignments": {
-          "account_number": "4681",
-          "arabic_name": "ذمم مدينة متعلّقة بالعبوات والمعدّات",
-          "french_name": "Créances pour Emballages et Matériels à Rendre"
-        },
-        "Other Operating Debtor Accounts": {
-          "account_number": "4689",
-          "arabic_name": "حسابات مدينة مختلفة - إستثمار",
-          "french_name": "Autres Comptes Débiteurs Divers – Exploitation"
-        },
-        "Receivables on Disposals of Fixed Assets & Financial Deeds": {
-          "account_number": "4691",
-          "arabic_name": "ذمم مدينة على بيع اصول ثابتة وسندات توظيف",
-          "french_name": "Créances sur Cession d’Immobilisations et Valeurs Mobilières de Placement"
-        },
-        "Other Non-Operating Debtor Accounts": {
-          "account_number": "4699",
-          "arabic_name": "مدينون مختلفون - خارج الإستثمار",
-          "french_name": "Autres Comptes Débiteurs Divers – Hors Exploitation"
-        }
-      },
-      "PRE-PAYMENTS & ACCRUALS": {
-        "account_number": "47",
-        "arabic_name": "حسابات التسوية",
-        "french_name": "Comptes de Régularisation",
-        "Deferred Charges": {
-          "account_number": "471",
-          "arabic_name": "الأعباء الواجب توزيعها على عدة دورات",
-          "french_name": "Charges à Répartir sur Plusieurs Exercices",
-          "Pre-Operating Expenses": {
-            "account_number": "4711",
-            "arabic_name": "أعباء ما قبل الإستثمار",
-            "french_name": "Frais de Pré-Exploitation"
+          "Accrued Income": {
+            "account_number": "473",
+            "arabic_name": "ايرادات محتسبة مسبقا",
+            "french_name": "Produits Constatés d’Avance"
           },
-          "Major Repairs to be Amortized": {
-            "account_number": "4712",
-            "arabic_name": "التصليحات الكبيرة الواجب إستهلاكها",
-            "french_name": "Grosses Réparations à Amortir"
+          "Accrued Unpaid Charges": {
+            "account_number": "474",
+            "arabic_name": "اعباء مستحقة وغير مدفوعة",
+            "french_name": "Frais à Payer"
           },
-          "Bonds Settlement Premium": {
-            "account_number": "4713",
-            "arabic_name": "علاوات تسديد السندات",
-            "french_name": "Primes de Remboursement des Obligations"
+          "Exchange Difference - Liability": {
+            "account_number": "475",
+            "arabic_name": "فروقات صرف - خصوم",
+            "french_name": "Écarts de Conversion – Passif"
           },
-          "Other Deferred Charges": {
-            "account_number": "4719",
-            "arabic_name": "اعباء أخرى واجب توزيعها على عدة دورات",
-            "french_name": "Autres Charges à Répartir sur Plusieurs Exercices"
+          "Exchange Difference - Asset": {
+            "account_number": "476",
+            "arabic_name": "فروقات صرف - أصـول",
+            "french_name": "Écarts de Conversion – Actif"
           }
         },
-        "Prepaid Charges": {
-          "account_number": "472",
-          "arabic_name": "اعباء محتسبة مسبقا",
-          "french_name": "Charges Constatées d’Avance"
-        },
-        "Accrued Income": {
-          "account_number": "473",
-          "arabic_name": "ايرادات محتسبة مسبقا",
-          "french_name": "Produits Constatés d’Avance"
-        },
-        "Accrued Unpaid Charges": {
-          "account_number": "474",
-          "arabic_name": "اعباء مستحقة وغير مدفوعة",
-          "french_name": "Frais à Payer"
-        },
-        "Exchange Difference - Liability": {
-          "account_number": "475",
-          "arabic_name": "فروقات صرف - خصوم",
-          "french_name": "Écarts de Conversion – Passif"
-        },
-        "Exchange Difference - Asset": {
-          "account_number": "476",
-          "arabic_name": "فروقات صرف - أصـول",
-          "french_name": "Écarts de Conversion – Actif"
-        }
-      },
-      "Temporary & Suspense Accounts": {
-        "account_number": "48",
-        "arabic_name": "الحسابات المؤقّتة وقيد التسوية",
-        "french_name": "Comptes d’Attente et à Régulariser",
-        "Pending & Regularization Accounts": {
-          "account_number": "481",
-          "arabic_name": "الحسابات التوزيع الدوري للأعباء",
-          "french_name": "Comptes d’Attente et à Régulariser"
-        },
-        "Periodic Distribution of Revenues": {
-          "account_number": "482",
-          "arabic_name": "الحسابات التوزيع الدوري للإيرادات",
-          "french_name": "Distribution Périodique des Revenues"
-        }
-      },
-      "Provisions For Diminution In Value of Receivables & Payables": {
-        "account_number": "49",
-        "arabic_name": "مؤونات لمواجهة هبوط قيم حسابات الذمم",
-        "french_name": "Provisions pour Dépréciation des Comptes de Titres",
-        "Provisions for Customers Bad Debts": {
-          "account_number": "491",
-          "arabic_name": "مؤونات تدني قيم حسابات الزبائن",
-          "french_name": "Provisions pour Dépréciation des Créances Clients"
-        },
-        "Provisions for Shareholders/Partners Bad Debts": {
-          "account_number": "495",
-          "arabic_name": "مؤونات تدني قيم حسابات الشركاء",
-          "french_name": "Provisions pour Dépréciation des Comptes Associés"
-        },
-        "Sundry Debtors Devaluation Provisions": {
-          "account_number": "496",
-          "arabic_name": "مؤونات هبوط قيم حسابات الذمم المدينة المختلفة",
-          "french_name": "Provisions pour Dévaluation de Créances Diverses",
-          "Provisions for Other Operating Bad Debts": {
-            "account_number": "4968",
-            "arabic_name": "مؤونات تدني قيم ذمم إستثمار مدينة متفرّقة",
-            "french_name": "Provisions pour Débiteurs Divers – Exploitation"
+        "Temporary & Suspense Accounts": {
+          "account_number": "48",
+          "arabic_name": "الحسابات المؤقّتة وقيد التسوية",
+          "french_name": "Comptes d’Attente et à Régulariser",
+          "Pending & Regularization Accounts": {
+            "account_number": "481",
+            "arabic_name": "الحسابات التوزيع الدوري للأعباء",
+            "french_name": "Comptes d’Attente et à Régulariser"
           },
-          "Provisions for Other Non-Operating Bad Debts": {
-            "account_number": "4969",
-            "arabic_name": "مؤونات تدني قيم ذمم مدينة - خارج الإستثمار",
-            "french_name": "Provisions pour Débiteurs Divers – Hors Exploitation"
+          "Periodic Distribution of Revenues": {
+            "account_number": "482",
+            "arabic_name": "الحسابات التوزيع الدوري للإيرادات",
+            "french_name": "Distribution Périodique des Revenues"
           }
         },
-        "Bad Debts Due to Bankruptcy": {
-          "account_number": "498",
-          "arabic_name": "مؤونات خسائر ديون عند إعلان الإفلاس",
-          "french_name": "Provisions pour Pertes de Créances en Cas de Faillite",
-          "Provisions for Losses on Bankrupt Clients Accounts": {
-            "account_number": "4981",
-            "arabic_name": "مؤونات خسائر ديون زبائن عند إعلان الإفلاس",
-            "french_name": "Provisions pour Pertes sur Clients en Faillite"
+        "Provisions For Diminution In Value of Receivables & Payables": {
+          "account_number": "49",
+          "arabic_name": "مؤونات لمواجهة هبوط قيم حسابات الذمم",
+          "french_name": "Provisions pour Dépréciation des Comptes de Titres",
+          "Provisions for Customers Bad Debts": {
+            "account_number": "491",
+            "arabic_name": "مؤونات تدني قيم حسابات الزبائن",
+            "french_name": "Provisions pour Dépréciation des Créances Clients"
           },
-          "Provisions for Losses on Bankrupt Partners Accounts": {
-            "account_number": "4985",
-            "arabic_name": "مؤونات خسائر ديون شركاء عند إعلان الإفلاس",
-            "french_name": "Provisions pour Pertes sur Associés en Faillite"
+          "Provisions for Shareholders/Partners Bad Debts": {
+            "account_number": "495",
+            "arabic_name": "مؤونات تدني قيم حسابات الشركاء",
+            "french_name": "Provisions pour Dépréciation des Comptes Associés"
           },
-          "Provisions for losses on Operational Bankrupt Debtors": {
-            "account_number": "4986.8",
-            "arabic_name": "مؤونات خسائر ديون إستثمار متفرّقة - (إفلاس)",
-            "french_name": "Provisions pour Débiteurs Divers en Faillite – Exploitation"
+          "Sundry Debtors Devaluation Provisions": {
+            "account_number": "496",
+            "arabic_name": "مؤونات هبوط قيم حسابات الذمم المدينة المختلفة",
+            "french_name": "Provisions pour Dévaluation de Créances Diverses",
+            "Provisions for Other Operating Bad Debts": {
+              "account_number": "4968",
+              "arabic_name": "مؤونات تدني قيم ذمم إستثمار مدينة متفرّقة",
+              "french_name": "Provisions pour Débiteurs Divers – Exploitation"
+            },
+            "Provisions for Other Non-Operating Bad Debts": {
+              "account_number": "4969",
+              "arabic_name": "مؤونات تدني قيم ذمم مدينة - خارج الإستثمار",
+              "french_name": "Provisions pour Débiteurs Divers – Hors Exploitation"
+            }
           },
-          "Provisions for losses on Non-Operational Bankrupt Debtors": {
-            "account_number": "4986.9",
-            "arabic_name": "مؤونات خسائر ديون خارج الإستثمار - (إفلاس)",
-            "french_name": "Provisions pour Débiteurs Divers en Faillite – Hors Exploitation"
+          "Bad Debts Due to Bankruptcy": {
+            "account_number": "498",
+            "arabic_name": "مؤونات خسائر ديون عند إعلان الإفلاس",
+            "french_name": "Provisions pour Pertes de Créances en Cas de Faillite",
+            "Provisions for Losses on Bankrupt Clients Accounts": {
+              "account_number": "4981",
+              "arabic_name": "مؤونات خسائر ديون زبائن عند إعلان الإفلاس",
+              "french_name": "Provisions pour Pertes sur Clients en Faillite"
+            },
+            "Provisions for Losses on Bankrupt Partners Accounts": {
+              "account_number": "4985",
+              "arabic_name": "مؤونات خسائر ديون شركاء عند إعلان الإفلاس",
+              "french_name": "Provisions pour Pertes sur Associés en Faillite"
+            },
+            "Provisions for losses on Operational Bankrupt Debtors": {
+              "account_number": "4986.8",
+              "arabic_name": "مؤونات خسائر ديون إستثمار متفرّقة - (إفلاس)",
+              "french_name": "Provisions pour Débiteurs Divers en Faillite – Exploitation"
+            },
+            "Provisions for losses on Non-Operational Bankrupt Debtors": {
+              "account_number": "4986.9",
+              "arabic_name": "مؤونات خسائر ديون خارج الإستثمار - (إفلاس)",
+              "french_name": "Provisions pour Débiteurs Divers en Faillite – Hors Exploitation"
+            }
           }
         }
       }
@@ -1614,7 +1613,7 @@
         "arabic_name": "التحويلات الداخلية",
         "french_name": "Virements Internes"
       },
-      "Provisions": {
+      "Provisions for Depreciation of Marketable Securities": {
         "account_number": "59",
         "arabic_name": "مؤنات هبوط اسعار سندات التوظيف",
         "french_name": "Provisions pour Dépréciation des Valeurs Mobilières de Placement"
@@ -1670,7 +1669,7 @@
           }
         }
       },
-      "Purchase of Raw Materials & Consumables": {
+      "Purchase of Raw Materials  & Consumables": {
         "account_number": "61",
         "arabic_name": "مواد اولية واستهلاكية مستخدمة",
         "french_name": "Achats d’Approvisionnements et Variation des Stocks",
@@ -1967,17 +1966,17 @@
         "Social Security Charges": {
           "account_number": "635",
           "arabic_name": "أعباء الضمان الإجتماعي",
-          "french_name": "Charges Sociales",
-          "Social Security Fund Contributions": {
-            "account_number": "6351",
-            "arabic_name": "اشتراكات فروع الضمان الاجتماعي",
-            "french_name": "Cotisations a la C.N.S.S"
-          },
-          "End of Service Indemnities Provisions": {
-            "account_number": "6355",
-            "arabic_name": "فروقات تعويضات نهاية الخدمة",
-            "french_name": "Provisions pour Indemnities de Fin de Service"
-          }
+          "french_name": "Charges Sociales"
+        },
+        "Social Security Fund Contributions": {
+          "account_number": "6351",
+          "arabic_name": "اشتراكات فروع الضمان الاجتماعي",
+          "french_name": "Cotisations a la C.N.S.S"
+        },
+        "End of Service Indemnities Provisions": {
+          "account_number": "6355",
+          "arabic_name": "فروقات تعويضات نهاية الخدمة",
+          "french_name": "Provisions pour Indemnities de Fin de Service"
         }
       },
       "Fees & Taxes": {
@@ -2013,11 +2012,6 @@
             "arabic_name": "ضريبة المادة 51 من القانون 497/2003",
             "french_name": "Taxe de l'Article 51 Loi 479/2003"
           },
-          "Tax on Profits from Fixed Assets Disposal or Revaluation": {
-            "account_number": "6452",
-            "arabic_name": "الضريبة على أرباح التفرغ أو اعادة تخمين أصول",
-            "french_name": "Impots s/Profits de Cession ou Reeval.des Immobilisation"
-          },
           "Holding Taxes - on Capital and Services": {
             "account_number": "6455",
             "arabic_name": "ضرائب شركات الهولدينغ - رأس مال وابرادات خدمات",
@@ -2028,10 +2022,15 @@
             "arabic_name": "غرامات ضريبة",
             "french_name": "Amendes Fiscales"
           },
-          "Other Taxes & Duties": {
+          "Other Taxes & Duties (Miscellaneous)": {
             "account_number": "6459",
             "arabic_name": "ضرائب ورسوم أخرى",
             "french_name": "Autres Impots, Taxes et Versements Assimiles"
+          },
+          "Tax on Profits from Fixed Assets Disposal or Revaluation (Fees)": {
+            "account_number": "6452",
+            "arabic_name": "الضريبة على أرباح التفرغ أو اعادة تخمين أصول",
+            "french_name": "Impots s/Profits de Cession ou Reeval.des Immobilisation"
           }
         }
       },
@@ -2046,168 +2045,168 @@
           "Depreciation Allocation of Intangible Fixed Assets": {
             "account_number": "6511",
             "arabic_name": "مخصصات إستهلاك الأصول الثابتة غير المادية",
-            "french_name": "Dotations aux Amortissements – Immobilisations Incorporelles",
-            "Amortization Allocation of Business Concern": {
-              "account_number": "6511.1",
-              "arabic_name": "مخصصات إستهلاك المؤسّسة التجارية",
-              "french_name": "Dotations aux Amortissements – Fonds de Commerce"
-            },
-            "Amortization Allocation of Formation Expenses": {
-              "account_number": "6511.2",
-              "arabic_name": "مخصصات إستهلاك مصاريف التأسيس",
-              "french_name": "Dotations aux Amortissements – Frais d’Établissement"
-            },
-            "Amortization Allocation of Research & Development Expenses": {
-              "account_number": "6511.3",
-              "arabic_name": "مخصصات إستهلاك مصاريف البحوث والتطوير",
-              "french_name": "Dotations aux Amortissements – Frais de Recherche et de Développement"
-            },
-            "Amortization Allocation of Patents & Trade Marks": {
-              "account_number": "6511.4",
-              "arabic_name": "مخصصات إستهلاك براءات الإختراع، الإجازات، العلامات،...",
-              "french_name": "Dotations aux Amortissements – Brevets, Licences et Autres"
-            },
-            "Amortization Allocation of Other Intangible Fixed Assets": {
-              "account_number": "6511.9",
-              "arabic_name": "مخصصات إستهلاك أصول ثابتة غير مادية أخرى",
-              "french_name": "Dotations aux Amortissements – Autres Immobilisations Incorporelles"
-            }
+            "french_name": "Dotations aux Amortissements – Immobilisations Incorporelles"
+          },
+          "Amortization Allocation of Business Concern": {
+            "account_number": "6511.1",
+            "arabic_name": "مخصصات إستهلاك المؤسّسة التجارية",
+            "french_name": "Dotations aux Amortissements – Fonds de Commerce"
+          },
+          "Amortization Allocation of Formation Expenses": {
+            "account_number": "6511.2",
+            "arabic_name": "مخصصات إستهلاك مصاريف التأسيس",
+            "french_name": "Dotations aux Amortissements – Frais d’Établissement"
+          },
+          "Amortization Allocation of Research & Development Expenses": {
+            "account_number": "6511.3",
+            "arabic_name": "مخصصات إستهلاك مصاريف البحوث والتطوير",
+            "french_name": "Dotations aux Amortissements – Frais de Recherche et de Développement"
+          },
+          "Amortization Allocation of Patents & Trade Marks": {
+            "account_number": "6511.4",
+            "arabic_name": "مخصصات إستهلاك براءات الإختراع، الإجازات، العلامات،...",
+            "french_name": "Dotations aux Amortissements – Brevets, Licences et Autres"
+          },
+          "Amortization Allocation of Other Intangible Fixed Assets": {
+            "account_number": "6511.9",
+            "arabic_name": "مخصصات إستهلاك أصول ثابتة غير مادية أخرى",
+            "french_name": "Dotations aux Amortissements – Autres Immobilisations Incorporelles"
           },
           "Depreciation Allocation of Tangible Fixed Assets": {
             "account_number": "6512",
             "arabic_name": "مخصصات إستهلاك الأصول الثابتة المادية",
-            "french_name": "Dotations aux Amortissements – Immobilisations Corporelles",
-            "Depreciation Allocation of Lands": {
-              "account_number": "6512.1",
-              "arabic_name": "مخصصات إستهلاك الأراضي",
-              "french_name": "Dotation aux Amortissements – Terrains d’Exploitation et Réaménagement"
+            "french_name": "Dotations aux Amortissements – Immobilisations Corporelles"
+          },
+          "Depreciation Allocation of Lands": {
+            "account_number": "6512.1",
+            "arabic_name": "مخصصات إستهلاك الأراضي",
+            "french_name": "Dotation aux Amortissements – Terrains d’Exploitation et Réaménagement"
+          },
+          "Depreciation Allocation Buildings & Constructions": {
+            "account_number": "6512.3",
+            "arabic_name": "مخصصات إستهلاك الأبنية والمنشآت",
+            "french_name": "Dotation aux Amortissements – Constructions",
+            "Depreciation Allocation - Concrete Buildings for Trade, Tourism, and Services": {
+              "account_number": "6512.311",
+              "arabic_name": "مخصصات إستهلاك الأبنية المشادة بالباطون والمستعملة لغايات تجارية, سياحية وخدمية",
+              "french_name": "Dotations aux Amortissements Batis en Betons pour Commerce, Tourism, et Services"
             },
-            "Depreciation Allocation Buildings & Constructions": {
-              "account_number": "6512.3",
-              "arabic_name": "مخصصات إستهلاك الأبنية والمنشآت",
-              "french_name": "Dotation aux Amortissements – Constructions",
-              "Depreciation Allocation - Concrete Buildings for Trade, Tourism, and Services": {
-                "account_number": "6512.311",
-                "arabic_name": "مخصصات إستهلاك الأبنية المشادة بالباطون والمستعملة لغايات تجارية, سياحية وخدمية",
-                "french_name": "Dotations aux Amortissements Batis en Betons pour Commerce, Tourism, et Services"
-              },
-              "Depreciation Allocation - Concrete Buildings for Industry": {
-                "account_number": "6512.312",
-                "arabic_name": "مخصصات إستهلاك الأبنية المشادة بالباطون والمستعملة لغايات صناعية",
-                "french_name": "Dotations aux Amortissements Batis en Betons pour Manufactures ou Industries"
-              },
-              "Depreciation Allocation - Metallic Buildings for Trade or Industry": {
-                "account_number": "6512.313",
-                "arabic_name": "مخصصات إستهلاك أبنية وانشاءات معدنية لغايات تجارية او صناعية",
-                "french_name": "Dotations aux Amortissements Batis Metalliques pour Commerce ou Industries"
-              },
-              "Depreciation Allocation - Building Installations & Improvements": {
-                "account_number": "6512.321",
-                "arabic_name": "مخصصات إستهلاك تجهيزات الأبنية واستصلاحها",
-                "french_name": "Dotations aux Amortissements Installations & Amenag. des Constructions"
-              },
-              "Depreciation Allocation of Infrastructures": {
-                "account_number": "6512.33",
-                "arabic_name": "مخصصات إستهلاك انشاءات البنى التحتية",
-                "french_name": "Dotations aux Amortissements des Infrastructures"
-              },
-              "Depreciation Allocation of Constructions on Unowned Lands": {
-                "account_number": "6512.34",
-                "arabic_name": "مخصصات إستهلاك انشاءات على أراضي الغير",
-                "french_name": "Dotations aux Amortissements Constructions sur Terrains d'Autrui"
-              }
+            "Depreciation Allocation - Concrete Buildings for Industry": {
+              "account_number": "6512.312",
+              "arabic_name": "مخصصات إستهلاك الأبنية المشادة بالباطون والمستعملة لغايات صناعية",
+              "french_name": "Dotations aux Amortissements Batis en Betons pour Manufactures ou Industries"
             },
-            "Depreciation Allocation of Machinery & Equipment": {
-              "account_number": "6512.4",
-              "arabic_name": "مخصصات إستهلاك التجهيزات الفنية والآلات الصناعية",
-              "french_name": "Dotation aux Amortissements – Installations Techniques, Matériels et Outillage Industriels",
-              "Depreciation Allocation of Specialized Technical Installations": {
-                "account_number": "6512.41",
-                "arabic_name": "مخصصات إستهلاك التجهيزات الفنية متخصصة",
-                "french_name": "Dotation aux Amortissements – Installations Techniques Complexes Specialisees"
-              },
-              "Depreciation Allocation of Specific Technical Installations": {
-                "account_number": "6512.42",
-                "arabic_name": "مخصصات إستهلاك التجهيزات الفنية ذات طبيعة خاصة",
-                "french_name": "Dotation aux Amortissements – Installations Techniques a Caractero Specifique"
-              },
-              "Depreciation Allocation of Industrial Machinery & Equipment": {
-                "account_number": "6512.43",
-                "arabic_name": "مخصصات إستهلاك الألات والمعدتات الصناعية",
-                "french_name": "Dotation aux Amortissements Materiels Industriels"
-              },
-              "Depreciation Allocation of Industrial Tools": {
-                "account_number": "6512.44",
-                "arabic_name": "مخصصات إستهلاك الأدوات الصناعية",
-                "french_name": "Dotation aux Amortissements Outillages Industriels"
-              },
-              "Depreciation Allocation of Hotels & Restaurants Appliances": {
-                "account_number": "6512.45",
-                "arabic_name": "مخصصات إستهلاك الأواني الزجاجية والأدوات الفضية في الفناضق والمطاعم",
-                "french_name": "Dotation aux Amortissements – Articles & Equipements pour Hotels et Restaurants"
-              }
+            "Depreciation Allocation - Metallic Buildings for Trade or Industry": {
+              "account_number": "6512.313",
+              "arabic_name": "مخصصات إستهلاك أبنية وانشاءات معدنية لغايات تجارية او صناعية",
+              "french_name": "Dotations aux Amortissements Batis Metalliques pour Commerce ou Industries"
             },
-            "Depreciation Allocation of Vehicles": {
-              "account_number": "6512.5",
-              "arabic_name": "مخصصات إستهلاك المركبات وآليات النقل",
-              "french_name": "Dotation aux Amortissements – Véhicules et Matériel de Transport",
-              "Depreciation Allocation of Passenger Vehicles": {
-                "account_number": "6512.51",
-                "arabic_name": "مخصصات إستهلاك سيارات سياحية",
-                "french_name": "Dotation aux Amortissements – Voutures de Passagers"
-              },
-              "Depreciation Allocation of Transport Vehicles & Handling Equipment": {
-                "account_number": "6512.52",
-                "arabic_name": "مخصصات إستهلاك شاحناة واليات نقل",
-                "french_name": "Dotation aux Amortissements – Vehicules et Materiel de Transport"
-              },
-              "Depreciation Allocation of Maritime Transport Means": {
-                "account_number": "6512.53",
-                "arabic_name": "مخصصات إستهلاك وسائل النقل البحري",
-                "french_name": "Dotation aux Amortissements Moyens de Transport Maritime"
-              },
-              "Depreciation Allocation of Air Transport Means": {
-                "account_number": "6512.54",
-                "arabic_name": "مخصصات إستهلاك وسائل النقل الجوي",
-                "french_name": "Dotation aux Amortissements Moyens de Transport Aerien"
-              }
+            "Depreciation Allocation - Building Installations & Improvements": {
+              "account_number": "6512.321",
+              "arabic_name": "مخصصات إستهلاك تجهيزات الأبنية واستصلاحها",
+              "french_name": "Dotations aux Amortissements Installations & Amenag. des Constructions"
             },
-            "Depreciation Allocation of Other Tangible Fixed Assets": {
-              "account_number": "6512.6",
-              "arabic_name": "مخصصات إستهلاك أصول ثابتة مادية أخرى",
-              "french_name": "Dotation aux Amortissements – Autres Immobilisations Corporelles",
-              "Depreciation Allocation of Internal Installation, Decoration, & Improvements": {
-                "account_number": "6512.61",
-                "arabic_name": "مخصصات إستهلاك تجهيزات داخلية, ديكور وتحسينات مختلفة",
-                "french_name": "Dotation aux Amortissements Installations Internes, Decor & Amenag Divisions"
-              },
-              "Depreciation Allocation of Office Equipment": {
-                "account_number": "6512.621",
-                "arabic_name": "مخصصات إستهلاك ادوات مكتبية",
-                "french_name": "Dotation aux Amortissements Materiel de Bureau"
-              },
-              "Depreciation Allocation of Computer Equipment": {
-                "account_number": "6512.622",
-                "arabic_name": "مخصصات إستهلاك ادوات معلوماتية",
-                "french_name": "Dotation aux Amortissements Materiel Informatique"
-              },
-              "Depreciation Allocation of Furnitures & Fixtures": {
-                "account_number": "6512.631",
-                "arabic_name": "مخصصات إستهلاك أثاث ومفروشات",
-                "french_name": "Dotation aux Amortissements Mobilier"
-              },
-              "Depreciation Allocation of Hospitality Linen": {
-                "account_number": "6512.632",
-                "arabic_name": "مخصصات إستهلاك البياضات والشراشف والمناشف",
-                "french_name": "Dotation aux Amortissements Linges des Services Hotellers"
-              }
+            "Depreciation Allocation of Infrastructures": {
+              "account_number": "6512.33",
+              "arabic_name": "مخصصات إستهلاك انشاءات البنى التحتية",
+              "french_name": "Dotations aux Amortissements des Infrastructures"
+            },
+            "Depreciation Allocation of Constructions on Unowned Lands": {
+              "account_number": "6512.34",
+              "arabic_name": "مخصصات إستهلاك انشاءات على أراضي الغير",
+              "french_name": "Dotations aux Amortissements Constructions sur Terrains d'Autrui"
             }
           },
-          "Depreciation Allocation of Deferred Charges": {
-            "account_number": "6515",
-            "arabic_name": "مخصصات إستهلاك الأعباء الموزّعة على دورات",
-            "french_name": "Dotation aux Amortissements – Charges à Répartir"
+          "Depreciation Allocation of Machinery & Equipment": {
+            "account_number": "6512.4",
+            "arabic_name": "مخصصات إستهلاك التجهيزات الفنية والآلات الصناعية",
+            "french_name": "Dotation aux Amortissements – Installations Techniques, Matériels et Outillage Industriels",
+            "Depreciation Allocation of Specialized Technical Installations": {
+              "account_number": "6512.41",
+              "arabic_name": "مخصصات إستهلاك التجهيزات الفنية متخصصة",
+              "french_name": "Dotation aux Amortissements – Installations Techniques Complexes Specialisees"
+            },
+            "Depreciation Allocation of Specific Technical Installations": {
+              "account_number": "6512.42",
+              "arabic_name": "مخصصات إستهلاك التجهيزات الفنية ذات طبيعة خاصة",
+              "french_name": "Dotation aux Amortissements – Installations Techniques a Caractero Specifique"
+            },
+            "Depreciation Allocation of Industrial Machinery & Equipment": {
+              "account_number": "6512.43",
+              "arabic_name": "مخصصات إستهلاك الألات والمعدتات الصناعية",
+              "french_name": "Dotation aux Amortissements Materiels Industriels"
+            },
+            "Depreciation Allocation of Industrial Tools": {
+              "account_number": "6512.44",
+              "arabic_name": "مخصصات إستهلاك الأدوات الصناعية",
+              "french_name": "Dotation aux Amortissements Outillages Industriels"
+            },
+            "Depreciation Allocation of Hotels & Restaurants Appliances": {
+              "account_number": "6512.45",
+              "arabic_name": "مخصصات إستهلاك الأواني الزجاجية والأدوات الفضية في الفناضق والمطاعم",
+              "french_name": "Dotation aux Amortissements – Articles & Equipements pour Hotels et Restaurants"
+            }
+          },
+          "Depreciation Allocation of Vehicles": {
+            "account_number": "6512.5",
+            "arabic_name": "مخصصات إستهلاك المركبات وآليات النقل",
+            "french_name": "Dotation aux Amortissements – Véhicules et Matériel de Transport",
+            "Depreciation Allocation of Passenger Vehicles": {
+              "account_number": "6512.51",
+              "arabic_name": "مخصصات إستهلاك سيارات سياحية",
+              "french_name": "Dotation aux Amortissements – Voutures de Passagers"
+            },
+            "Depreciation Allocation of Transport Vehicles & Handling Equipment": {
+              "account_number": "6512.52",
+              "arabic_name": "مخصصات إستهلاك شاحناة واليات نقل",
+              "french_name": "Dotation aux Amortissements – Vehicules et Materiel de Transport"
+            },
+            "Depreciation Allocation of Maritime Transport Means": {
+              "account_number": "6512.53",
+              "arabic_name": "مخصصات إستهلاك وسائل النقل البحري",
+              "french_name": "Dotation aux Amortissements Moyens de Transport Maritime"
+            },
+            "Depreciation Allocation of Air Transport Means": {
+              "account_number": "6512.54",
+              "arabic_name": "مخصصات إستهلاك وسائل النقل الجوي",
+              "french_name": "Dotation aux Amortissements Moyens de Transport Aerien"
+            }
+          },
+          "Depreciation Allocation of Other Tangible Fixed Assets": {
+            "account_number": "6512.6",
+            "arabic_name": "مخصصات إستهلاك أصول ثابتة مادية أخرى",
+            "french_name": "Dotation aux Amortissements – Autres Immobilisations Corporelles",
+            "Depreciation Allocation of Internal Installation, Decoration, & Improvements": {
+              "account_number": "6512.61",
+              "arabic_name": "مخصصات إستهلاك تجهيزات داخلية, ديكور وتحسينات مختلفة",
+              "french_name": "Dotation aux Amortissements Installations Internes, Decor & Amenag Divisions"
+            },
+            "Depreciation Allocation of Office Equipment": {
+              "account_number": "6512.621",
+              "arabic_name": "مخصصات إستهلاك ادوات مكتبية",
+              "french_name": "Dotation aux Amortissements Materiel de Bureau"
+            },
+            "Depreciation Allocation of Computer Equipment": {
+              "account_number": "6512.622",
+              "arabic_name": "مخصصات إستهلاك ادوات معلوماتية",
+              "french_name": "Dotation aux Amortissements Materiel Informatique"
+            },
+            "Depreciation Allocation of Furnitures & Fixtures": {
+              "account_number": "6512.631",
+              "arabic_name": "مخصصات إستهلاك أثاث ومفروشات",
+              "french_name": "Dotation aux Amortissements Mobilier"
+            },
+            "Depreciation Allocation of Hospitality Linen": {
+              "account_number": "6512.632",
+              "arabic_name": "مخصصات إستهلاك البياضات والشراشف والمناشف",
+              "french_name": "Dotation aux Amortissements Linges des Services Hotellers"
+            }
           }
+        },
+        "Depreciation Allocation of Deferred Charges": {
+          "account_number": "6515",
+          "arabic_name": "مخصصات إستهلاك الأعباء الموزّعة على دورات",
+          "french_name": "Dotation aux Amortissements – Charges à Répartir"
         },
         "Provisions": {
           "account_number": "655",
@@ -2327,27 +2326,27 @@
         "Provisions for Devaluation of Financial Assets": {
           "account_number": "679",
           "arabic_name": "مخصّصات الإستهلاكات والمؤونات المالية",
-          "french_name": "Dotation aux Amortissements et aux Provisions – Charges Financières",
-          "Amortization Allocation of Reimbursement Premiums": {
-            "account_number": "6791",
-            "arabic_name": "مخصّصات إستهلاك علاوات التسديد",
-            "french_name": "Dotation aux Amortissements – Primes de Remboursement"
-          },
-          "Amortization Allocation for Financial Assets Devaluation": {
-            "account_number": "6792",
-            "arabic_name": "مخصّصات مؤونات تدنّي قيم الأصول المالية",
-            "french_name": "Dotation aux Provisions pour Dépréciation – Immobilisations Financières"
-          },
-          "Provisions Allocations for Devaluation of Participations": {
-            "account_number": "6794",
-            "arabic_name": "مخصّصات مؤونات تدنّي قيم سندات التوظيف",
-            "french_name": "Dotation aux Provisions pour Dépréciation – Valeurs de Placement"
-          },
-          "Provisions Allocations for Financial Risks & Charges": {
-            "account_number": "6795",
-            "arabic_name": "مخصّصات مؤونات مواجهة مخاطر وأعباء مالية",
-            "french_name": "Dotation aux Provisions pour Risques et Charges Financières"
-          }
+          "french_name": "Dotation aux Amortissements et aux Provisions – Charges Financières"
+        },
+        "Amortization Allocation of Reimbursement Premiums": {
+          "account_number": "6791",
+          "arabic_name": "مخصّصات إستهلاك علاوات التسديد",
+          "french_name": "Dotation aux Amortissements – Primes de Remboursement"
+        },
+        "Amortization Allocation for Financial Assets Devaluation": {
+          "account_number": "6792",
+          "arabic_name": "مخصّصات مؤونات تدنّي قيم الأصول المالية",
+          "french_name": "Dotation aux Provisions pour Dépréciation – Immobilisations Financières"
+        },
+        "Provisions Allocations for Devaluation of Participations": {
+          "account_number": "6794",
+          "arabic_name": "مخصّصات مؤونات تدنّي قيم سندات التوظيف",
+          "french_name": "Dotation aux Provisions pour Dépréciation – Valeurs de Placement"
+        },
+        "Provisions Allocations for Financial Risks & Charges": {
+          "account_number": "6795",
+          "arabic_name": "مخصّصات مؤونات مواجهة مخاطر وأعباء مالية",
+          "french_name": "Dotation aux Provisions pour Risques et Charges Financières"
         }
       },
       "Non-Operating Charges": {
@@ -2397,12 +2396,12 @@
             "account_number": "6851.6",
             "arabic_name": "عمليات إدارية أخرى",
             "french_name": "Autres Opérations de Gestion"
+          },
+          "Charges on Capital Operations": {
+            "account_number": "6855",
+            "arabic_name": "أعباء على عمليات رأسمالية",
+            "french_name": "Charges sur Opérations en Capital"
           }
-        },
-        "Charges on Capital Operations": {
-          "account_number": "6855",
-          "arabic_name": "أعباء على عمليات رأسمالية",
-          "french_name": "Charges sur Opérations en Capital"
         },
         "Charges On Extra-Ordinary Events": {
           "account_number": "688",
@@ -2412,22 +2411,22 @@
         "Non-Operating Depreciations & Provisions": {
           "account_number": "689",
           "arabic_name": "مخصّصات إستهلاكات ومؤونات خارج الإستثمار",
-          "french_name": "Dotation aux Amortissements et aux Provisions – Hors Exploitation",
-          "Allocation for Extra-Ordinary Depreciation of Fixed Assets": {
-            "account_number": "6891",
-            "arabic_name": "مخصّصات إستهلاكات إستثنائية على أصول ثابتة",
-            "french_name": "Dotation aux Amortissements Exceptionnels sur Immobilisations"
-          },
-          "Provision Allocations for Exceptional Depreciations": {
-            "account_number": "6892",
-            "arabic_name": "مخصّصات مؤونات هبوط أسعار إستثنائي",
-            "french_name": "Dotation aux Provisions pour Dépréciations Exceptionnelles"
-          },
-          "Provision Allocations for Non-Operating Risks & Charges": {
-            "account_number": "6895",
-            "arabic_name": "مخصّصات مؤونات مخاطر وأعباء خارج الإستثمار",
-            "french_name": "Dotation aux Provisions pour Risques et Charges Hors Exploitation"
-          }
+          "french_name": "Dotation aux Amortissements et aux Provisions – Hors Exploitation"
+        },
+        "Allocation for Extra-Ordinary Depreciation of Fixed Assets": {
+          "account_number": "6891",
+          "arabic_name": "مخصّصات إستهلاكات إستثنائية على أصول ثابتة",
+          "french_name": "Dotation aux Amortissements Exceptionnels sur Immobilisations"
+        },
+        "Provision Allocations for Exceptional Depreciations": {
+          "account_number": "6892",
+          "arabic_name": "مخصّصات مؤونات هبوط أسعار إستثنائي",
+          "french_name": "Dotation aux Provisions pour Dépréciations Exceptionnelles"
+        },
+        "Provision Allocations for Non-Operating Risks & Charges": {
+          "account_number": "6895",
+          "arabic_name": "مخصّصات مؤونات مخاطر وأعباء خارج الإستثمار",
+          "french_name": "Dotation aux Provisions pour Risques et Charges Hors Exploitation"
         }
       },
       "Income Tax": {
@@ -2868,7 +2867,7 @@
       "account_number": "8",
       "arabic_name": "حسابات الإلتزامات خارج الميزانية",
       "french_name": "Comptes des Engagements Hors Bilan",
-      "Extra-Balance Sheet Contingency Accounts": {
+      "Contingency Accounts Sub-Group": {
         "account_number": "80",
         "arabic_name": "حسابات الإلتزامات خارج الميزانية",
         "french_name": "Comptes des Engagements Hors Bilan"
